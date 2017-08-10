@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SI PEPI KELING</string>
+    
+    <!--MODUL START-->
+    <string name="rs">RS</string>
+    <string name="sab">SAB</string>
+    <string name="dam">DAM</string>
+    <string name="ttu">TTU</string>
+    <string name="tpm">TPM</string>
+    <string name="pjb">PJB</string>
+    <string name="ppsd">PPSD</string>
+    <!--MODUL FINISH-->
+
+    <!--DESC. MODUL START-->
+    <string name="ketRS">Rumah Sakit</string>
+    <string name="ketSAB">Sumber Air Bersih</string>
+    <string name="ketDAM">Depot Air Minum</string>
+    <string name="ketTTU">Tempat-tempat Umum</string>
+    <string name="ketTPM">Tempat Pengelolaan Makan</string>
+    <string name="ketPJB">Pemantauan Jentik Berkala</string>
+    <string name="ketPPSD">Pendataan Sarana Sanitasi Dasar</string>
+    <!--DESC. MODUL FINISH-->
+</resources>
