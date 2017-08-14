@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">SI PEPI KELING</string>
-    
+    <string name="app_name">SI KELING</string>
+
     <!--MODUL START-->
     <string name="rs">RS</string>
     <string name="sab">SAB</string>
@@ -12,12 +12,167 @@
     <!--MODUL FINISH-->
 
     <!--DESC. MODUL START-->
-    <string name="ketRS">Rumah Sakit</string>
-    <string name="ketSAB">Sumber Air Bersih</string>
-    <string name="ketDAM">Depot Air Minum</string>
-    <string name="ketTTU">Tempat-tempat Umum</string>
-    <string name="ketTPM">Tempat Pengelolaan Makan</string>
-    <string name="ketPJB">Pemantauan Jentik Berkala</string>
-    <string name="ketPPSD">Pendataan Sarana Sanitasi Dasar</string>
+    <string name="ket">Keterangan :</string>
+    <string name="ketRS">1. RS = Rumah Sehat</string>
+    <string name="ketSAB">2. SAB = Sumber Air Bersih</string>
+    <string name="ketDAM">3. DAM = Depot Air Minum</string>
+    <string name="ketTTU">4. TTU = Tempat-tempat Umum</string>
+    <string name="ketTPM">5. TPM = Tempat Pengelolaan Makan</string>
+    <string name="ketPJB">6. PJB = Pemantauan Jentik Berkala</string>
+    <string name="ketPPSD">7. Pendataan Sarana Sanitasi Dasar</string>
     <!--DESC. MODUL FINISH-->
+
+    <!--RT START-->
+    <string name="rt_prompt">RT</string>
+    <string-array name="rt_arrays">
+        <item>RT 001</item>
+        <item>RT 002</item>
+        <item>RT 003</item>
+        <item>RT 004</item>
+        <item>RT 005</item>
+        <item>RT 006</item>
+        <item>RT 007</item>
+        <item>RT 008</item>
+        <item>RT 009</item>
+        <item>RT 010</item>
+    </string-array>
+    <!--RT FINISH-->
+
+    <!--RW START-->
+    <string name="rw_prompt">RW</string>
+    <string-array name="rw_arrays">
+        <item>RW 01</item>
+        <item>RW 02</item>
+        <item>RW 03</item>
+        <item>RW 04</item>
+        <item>RW 05</item>
+        <item>RW 06</item>
+        <item>RW 07</item>
+        <item>RW 08</item>
+    </string-array>
+    <!--RW FINISH-->
+
+    <string name="namakk">Nama Kepala Keluarga</string>
+    <string name="jumlahkk">Jumlah Anggota Keluarga (sesuai kk)</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="nmrRmh">No. Rmh</string>
+    <string name="next">Kirim</string>
+
+    <!--RS START-->
+    <string name="komponenRmh"><b>KOMPONEN RUMAH</b></string>
+    <string name="komponenRmh1"><b>1. Langit-langit</b></string>
+    <string name="komponenRmh1a">a. Tidak ada</string>
+    <string name="komponenRmh1b">b. Ada, kotor, sulit dibersihkan dan rawan kecelakaan</string>
+    <string name="komponenRmh1c">c. Ada, bersih dan tidak rawan kecelakaan</string>
+
+    <string name="komponenRmh2"><b>2. Dinding</b></string>
+    <string name="komponenRmh2a">a. Bukan tembok (terbuat dari anyaman bambu dan ilalang)</string>
+    <string name="komponenRmh2b">b. Semi permanen/ setengah tembok/ pasangan bata dan batu yang tidak diplester/ papan yang tidak kedap air</string>
+    <string name="komponenRmh2c">c. Permanen (tembok/ pasangan batu bata yang diplesteer) papan kedap air</string>
+
+    <string name="komponenRmh3"><b>3. Lantai</b></string>
+    <string name="komponenRmh3a">a. Tanah</string>
+    <string name="komponenRmh3b">b. Papan/ Anyaman bambu dekat dengan tanah/ plesteran yang retak dan berdebu</string>
+    <string name="komponenRmh3c">c. Diplester/ ubin/ keramik/papan (rumah panggung)</string>
+
+    <string name="komponenRmh4"><b>4. Jendela kamar tidur</b></string>
+    <string name="komponenRmh4a">a. Tidak ada</string>
+    <string name="komponenRmh4b">b. Ada</string>
+
+    <string name="komponenRmh5"><b>5. Jendela kamar tidur</b></string>
+    <string name="komponenRmh5a">a. Tidak ada</string>
+    <string name="komponenRmh5b">b. Ada</string>
+
+    <string name="komponenRmh6"><b>6. Ventilasi</b></string>
+    <string name="komponenRmh6a">a. Tidak ada</string>
+    <string name="komponenRmh6b">b. Ada, Ada, luas ventilasi permanen \u003c10% dari luas lantai</string>
+    <string name="komponenRmh6c">c. Ada, luas ventilasi permanen >10% dari luas lantai</string>
+
+    <string name="komponenRmh7"><b>7. Lubang asap dapur</b></string>
+    <string name="komponenRmh7a">a. Tidak ada</string>
+    <string name="komponenRmh7b">b. Ada, lubang ventilasi dapur \u003c10% dari luas lantai dapur</string>
+    <string name="komponenRmh7c">c. Ada, lubang ventilasi dapur >10% dari luas lantai dapur (asap keluar dengan sempurna) atau ada exhaust fan ada peralatan lain yang sejenis</string>
+
+    <string name="komponenRmh8"><b>8. Pencahayaan</b></string>
+    <string name="komponenRmh8a">a. Tidak terang, tidak dapat dipergunakan untuk membaca</string>
+    <string name="komponenRmh8b">b. Kurang terang, sehingga kurang jelas membaca dengan normal</string>
+    <string name="komponenRmh8c">c. Terang dan tidak silau sehingga dapat dipergunakan untuk membaca dengan normal</string>
+
+    <string name="saranasanitasi"><b>SARANA SANITASI</b></string>
+    <string name="saranasanitasi1"><b>1. Sarana air bersih (SGL/ SPT/ PP/ KU/ PAH)</b></string>
+    <string name="saranasanitasi1a">a. Tidak ada</string>
+    <string name="saranasanitasi1b">b. Ada, bukan milik sendiri dan tidak memenuhi syarat kesehatan</string>
+    <string name="saranasanitasi1c">c. Ada, milik sendiri dan tidak memenuhi syarat kesehatan</string>
+    <string name="saranasanitasi1d">d. Ada, bukan milik sendiri dan memenuhi syarat kesehatan</string>
+    <string name="saranasanitasi1e">e. Ada, milik sendiri dan memenuhi syarat kesehatan</string>
+
+    <string name="saranasanitasi2"><b>2. Jamban (Sarana pembuangan kotoran)</b></string>
+    <string name="saranasanitasi2a">a. Tidak ada</string>
+    <string name="saranasanitasi2b">b. Ada, bukan leher angsa, tidak ada tutup, disalurkan kesungai/kolam</string>
+    <string name="saranasanitasi2c">c. Ada, bukan leher angsa ada ditutup (leher angsa), disalurkan kesungai/ kolam</string>
+    <string name="saranasanitasi2d">d. Ada, bukan leher angsa ada tutup  septic tank</string>
+    <string name="saranasanitasi2e">e. Ada, leher angsa, septic tank</string>
+
+    <string name="saranasanitasi3"><b>3. Sarana pembuangan air limbah (SPAL)</b></string>
+    <string name="saranasanitasi3a">a. Tidak ada, sehingga tergenang tidak teratur dihalaman rumah</string>
+    <string name="saranasanitasi3b">b. Ada, diresapkan tetapi mencemari sumber air (jarak dengan sumber air \u003c 10m)</string>
+    <string name="saranasanitasi3c">c. Ada, dialirkan keselokan terbuka</string>
+    <string name="saranasanitasi3d">d. Ada, diresapkan tetapi mencemari sumber air (jarak dengan sumber air > 10m)</string>
+    <string name="saranasanitasi3e">e. Ada, dialirkan keselokan tertutup (saluran kota) untuk diolah lebih lanjut</string>
+
+    <string name="saranasanitasi4"><b>4. Sarana pembuangan sarana (tempat sampah )</b></string>
+    <string name="saranasanitasi4a">a. Tidak ada</string>
+    <string name="saranasanitasi4b">b. Ada, tetapi tidak kdepa air dan tidak ada tutup</string>
+    <string name="saranasanitasi4c">c. Ada, kedap air dan tidak bertutup</string>
+    <string name="saranasanitasi4d">d. Ada, kedep air dan bertutup</string>
+
+    <string name="perilakupenghuni"><b>C. PERILAKU PENGHUNI</b></string>
+    <string name="perilakupenghuni1"><b>1. Membuka jendela kamar tidur</b></string>
+    <string name="perilakupenghuni1a">a. Tidak pernah dibuka</string>
+    <string name="perilakupenghuni1b">b. kadang-kadang</string>
+    <string name="perilakupenghuni1c">c. Setiap hari dibuka</string>
+
+    <string name="perilakupenghuni2"><b>2. Membuka jendela ruang keluarga</b></string>
+    <string name="perilakupenghuni2a">a. Tidak pernah dibuka</string>
+    <string name="perilakupenghuni2b">b. kadang-kadang</string>
+    <string name="perilakupenghuni2c">c. Setiap hari dibuka</string>
+
+    <string name="perilakupenghuni3"><b>3. Membersihkan rumah dan halaman</b></string>
+    <string name="perilakupenghuni3a">a. Tidak pernah</string>
+    <string name="perilakupenghuni3b">b. kadang-kadang</string>
+    <string name="perilakupenghuni3c">c. Setiap hari</string>
+
+    <string name="perilakupenghuni4"><b>4. Membuang tinja bayi dan balita kejamban</b></string>
+    <string name="perilakupenghuni4a">a. Dibuang kesungai/ kebun/ kolam/ sembarangan</string>
+    <string name="perilakupenghuni4b">b. Kadang-kadang kejamban</string>
+    <string name="perilakupenghuni4c">c. Setiap hari dibuang kejamban</string>
+
+    <string name="perilakupenghuni5"><b>5. Membuang sampah pada tempat sampah</b></string>
+    <string name="perilakupenghuni5a">a. Dibuang kesungai/ kebun/ kolam/ sembarangan</string>
+    <string name="perilakupenghuni5b">b. Kadang-kadang dibuang ketempat sampah</string>
+    <string name="perilakupenghuni5c">c. Setiap hari dibuang ketempat sampah</string>
+
+    <string name="sampah"><b>SAMPAH</b></string>
+    <string name="sampah1"><b>1. Dipilah</b></string>
+    <string name="sampah1a">a. Organik</string>
+    <string name="sampah1a1">UPS</string>
+    <string name="sampah1a2">Lubang Biopori</string>
+    <string name="sampah1a3">Dll</string>
+
+    <string name="sampah2"><b>2. Tidak</b></string>
+    <string name="sampah2a">a. dibuang</string>
+    <string name="sampah2a1">ditimbun</string>
+    <string name="sampah2a2">dibakar</string>
+    <string name="sampah2a3">sembarang</string>
+    <!--RS FINISH-->
+
+    <!--FORM START-->
+    <string name="formRS">Berikut adalah form untuk pendataan <b>Rumah Sehat</b>, silahkan Anda
+    isi semua field ini sesuai prosedur yang telah diurutkan</string>
+    <!--FORM FINISH-->
+
+    <string name="uname">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
 </resources>
