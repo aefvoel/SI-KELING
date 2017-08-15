@@ -167,8 +167,213 @@
     <string name="sampah2a3">sembarang</string>
     <!--RS FINISH-->
 
+    <!--SAB START-->
+    <string name="jenisSAB1"><b>POMPA TANGAN DANGKAL/ DALAM/ LISTRIK KETERANGAN UMUM</b></string>
+    <string name="ketSAB_ketUmum"><b>KETERANGAN UMUM</b></string>
+    <string name="ketSAB_ketUmum1">1. Lokasi</string>
+    <string name="ketSAB_ketUmum2">2. Kode Sarana</string>
+    <string name="ketSAB_ketUmum3">3. Pemilik Sarana</string>
+    <string name="ketSAB_ketUmum4">4. Tanggal kunjungan</string>
+    <string name="ketSAB_ketUmum5">5. Apakah telah diambil sampel airnya</string>
+    <string name="ketSAB_ketUmum6">6. Nomor kode sampel air</string>
+    <string name="ketSAB_ketUmum7">7. Golongan koloform/ 100ml</string>
+    <string name="ketSAB_ketUmum8">8. Apakah airnya jernih?</string>
+    <string name="ketSAB_ketUmum9">9. Apakah airnya berwarna?</string>
+    <string name="ketSAB_ketUmum10">10. Apakah airnya berasa?</string>
+    <string name="ketSAB_ketUmum11">11. Apakah airnya berbau?</string>
+
+    <string name="SAB_DiagKhusus"><b>DIAGNOSA KHUSUS</b></string>
+    <string name="SAB1_DiagKhusus1">1. Apakah ada jamban pada radius 10m disekitar mu sumur pompa tangan/listrik ?</string>
+    <string name="SAB1_DiagKhusus2">2. Apakah ada sumber pencemaran lain pada radius 10m sekitar pompa tangan, misalnya kotoran hewan, sampah, genangan air dll?</string>
+    <string name="SAB1_DiagKhusus3">3. Apakah ada sewaktu-waktu ada genangan air pada jarak 2m sekitar pompa?</string>
+    <string name="SAB1_DiagKhusus4">4. Apakah ada saluran pembuangan air limbah rusak/ tidak ada?</string>
+    <string name="SAB1_DiagKhusus5">5. Apakah lantai semen yang mengitari pompa tangan mempunyai radius kurang dari 1m?</string>
+    <string name="SAB1_DiagKhusus6">6. Apakah ada/ sewaktu-waktu ada genangan air diatas lantai semen disekeliling pompa tangan/ listrik ?</string>
+    <string name="SAB1_DiagKhusus7">7. Apakah ada keretakan pada lantai semen disekelilingi pompa tangan/ listrik?</string>
+    <string name="SAB1_DiagKhusus8">8. Apakah dudukan pompa tangan/ lstrik yang berbatasan dengan laintai kurang rapat/ lepas. yang memungkinkan air merembes masuk kedalam sumur pompa tangan/ listrik ?</string>
+
+    <string name="jenisSAB2"><b>SUMUR GALI</b></string>
+    <string name="SAB2_DiagKhusus1">1. Apakah ada jamban pada radius 10m disekitar mu sumur pompa tangan/listrik ?</string>
+    <string name="SAB2_DiagKhusus2">2. Apakah ada sumber pencemaran lain pada radius 10m sekitar pompa tangan, misalnya kotoran hewan, sampah, genangan air dll?</string>
+    <string name="SAB2_DiagKhusus3">3. Apakah ada sewaktu-waktu ada genangan air pada jarak 2m sekitar pompa?</string>
+    <string name="SAB2_DiagKhusus4">4. Apakah ada saluran pembuangan air limbah rusak/ tidak ada?</string>
+    <string name="SAB2_DiagKhusus5">5. Apakah lantai semen yang mengitari pompa tangan mempunyai radius kurang dari 1m?</string>
+    <string name="SAB2_DiagKhusus6">6. Apakah ada/ sewaktu-waktu ada genangan air diatas lantai semen disekeliling sumur?</string>
+    <string name="SAB2_DiagKhusus7">7. Apakah ada keretakan pada lantai sekitar sumuryang memungkinkan air rembes ke dalam sumur ?</string>
+    <string name="SAB2_DiagKhusus8">8. apakah ember dan tali timba sewaktu-waktu diletakkan sedemikia rupa sehingga memungkinkan pencemaran ?</string>
+    <string name="SAB2_DiagKhusus9">9. apakah bibir sumur (cincin) tidak sempurna sehingga air rembes ke dalam sumur ?</string>
+    <string name="SAB2_DiagKhusus10">10. apakah dinding semen sepanjang ke dalam 3m diatas permukaan tanah tidak diplester cukup rapat/sempurna ?</string>
+
+    <string name="jenisSAB3"><b>SUMUR GALI PLUS</b></string>
+    <string name="SAB3_DiagKhusus1">1. Apakah ada jamban pada radius 10m disekitar mu sumur pompa tangan ?</string>
+    <string name="SAB3_DiagKhusus2">2. Apakah ada sumber pencemaran lain pada radius 10m sekitar pompa tangan, (misalnya kotoran hewan, sampah, genangan air dll)?</string>
+    <string name="SAB3_DiagKhusus3">3. Apakah ada kolam/genangan air dalam jarak 2m dari lantai semen pompa tangan ?</string>
+    <string name="SAB3_DiagKhusus4">4. Apakah ada saluran pembuangan air pompa tangan/ tidak ada(jarak 2m dari lantai) ?</string>
+    <string name="SAB3_DiagKhusus5">5. Apakah lantai semen sekeliling sumur/pompa tangan mempunyai radius kurang dari 1m?</string>
+    <string name="SAB3_DiagKhusus6">6. apakah ada genangan di atas lantai semen di sekeliling pompa tangan ?</string>
+    <string name="SAB3_DiagKhusus7">7. apakah ada keretakan pada lantai sekitar sumur ?</string>
+    <string name="SAB3_DiagKhusus8">8. apakah sewaktu-waktu, dipergunakan sebuah ember juga, yang diletakkan pada tempat yang dapat mencemarinya?</string>
+    <string name="SAB3_DiagKhusus9">9. Apakah dudukan pompa tangan yang berbatasan dengan lantainya kurang rapat/ lepas (yang memungkinkan air merembes masuk kedalam saluran pompa tangan)</string>
+    <string name="SAB3_DiagKhusus10">10. Apakah dinding sumur tidak cukup rapat disemen sepanjang kedalaman 3m dibawah permukaan?</string>
+    <string name="SAB3_DiagKhusus11">11. Apakah penutup sumur tidak bersih/ tidak ada?</string>
+    <!--SAB FINISH-->
+
+    <!--DAM START-->
+    <string name="damUmum1">Nama Depot</string>
+    <string name="damUmum2">Nama Pemilik</string>
+    <string name="damUmum3">Alamat</string>
+
+    <string name="ada">Tidak Menyimpang</string>
+    <string name="tdkAda">Menyimpang</string>
+
+    <string name="damSumberAir"><b>Sumber Air</b></string>
+    <string name="damSumberAir1">1. Bahan baku</string>
+    <string name="damSumberAir2">2. Air minum</string>
+    <string name="damSumberAir3">3. Pengangkutan air baku memiliki izin pengangkutan air</string>
+    <string name="damSumberAir4">4. Kendaraan tangki air terbuat dari bahan yang tidak dapat melepaskan zat-zat beracun kedalam air</string>
+    <string name="damSumberAir5">5. Ada bukti tertulis atau sertifikat air baku berasal dari sumber air tertentu</string>
+    <string name="damSumberAir6">6. Pengangkutan air baku paling lama 12 jam sampai kedepot air minum</string>
+
+    <string name="damPengawasan"><b>Pengawasan Proses Pengolahan</b></string>
+    <string name="damPengawasan1">1. Tandon air bahan baku terlindung dari sinar matahari</string>
+    <string name="damPengawasan2">2. Bahan tandon air terbuat dari bahan yang tidak dapat melepaskan zat-zat beracun kedalam air</string>
+
+    <string name="damTabung"><b>Tabung Filter</b></string>
+    <string name="damTabung1">1. Tabung filter terbuat dari bahan food grade dan mudah pemeliharaannya serta tahan tekanan tinggi</string>
+    <string name="damTabung2">2. Dimungkinkan dilakukan sistem back washing</string>
+
+    <string name="damMikro"><b>Mikro Filter</b></string>
+    <string name="damMikro1">1. Bahan mikro filter terbuat dari bahan food grade</string>
+    <string name="damMikro2">2. Terdapat lebih dari satu mikro filter () dengan ukuran berjenjang</string>
+    <string name="damMikro3">3. Mikro filter masih sesuai masa pakai</string>
+
+    <string name="damPeralatan"><b>Peralatan Pompa dan Pipa Penyaluran Air</b></string>
+    <string name="damPeralatan1">1. Terdapat pompa stainless yang berkekuatan tinggi</string>
+    <string name="damPeralatan2">2. Terdapat petunjuk tekanan air</string>
+    <string name="damPeralatan3">3. Pipa penyalur menggunakan bahan food grade</string>
+
+    <string name="damPeralatanSteril"><b>Peralatan  Sterilisasi/ Desinfeksi</b></string>
+    <string name="damPeralatanSteril1">1. Terdapat peralatan sterilisasi, berupa Ultra Violet atau Ozonisasi dan atau peralatan desinfeksi lainnya, yang berfungsi dan digunakan secara benar</string>
+    <string name="damPeralatanSteril2">2. Peralatan sterilisasi/ desinfeksi masih dalam masa efektif membunuh kuman</string>
+
+    <string name="damPencucian"><b>Pencucian Botol (Galon)</b></string>
+    <string name="damPencucian1">1. Ada fasilitas pencucian botol (galon)</string>
+    <string name="damPencucian2">2. Ada fasilitas pembilasan botol (galon)</string>
+
+    <string name="damPengisian"><b>Pengisian Botol (galon)</b></string>
+    <string name="damPengisian1">1. Ada fasilitas pengisian botol (galon) dalam ruangan tertutup</string>
+    <string name="damPengisian2">2. Tersedia tutup botol baru yang bersih</string>
+    <string name="damPengisian3">3. Tidak ada stock botol (galon) yang telah diisi lebih dari 1x24 jam didepot air minum</string>
+
+    <string name="damOperator"><b>Operator</b></string>
+    <string name="damOperator1">1. Berprilaku hidup bersih dan sehat</string>
+    <string name="damOperator2">2. Operator/ penanggung jawab/ pemilik memiliki surat keterangan telah mengikuti kursus hygiene sanitasi depot air minum</string>
+
+    <string name="damPengawasanTikus"><b>Pengawasan Tikus, lalat dan kecoa</b></string>
+    <string name="damPengawasanTikus1">1. terhindar dari tikus, lalat dan kecoa</string>
+
+    <string name="damLantai"><b>Lantai, Dinding, dan Langit-langit</b></string>
+    <string name="damLantai1">1. Konstruksi lantai, dinding, dan langit-langit kokoh dan kuat</string>
+
+    <string name="damPencahayaan"><b>Pencahayaan</b></string>
+    <string name="damPencahayaan1">1. Pencahayaan cukup baik</string>
+
+    <string name="damLain"><b>Lain-lain Kegiatan</b></string>
+    <string name="damLain1">1. Ada akses terhadap fasilitas santasi</string>
+    <string name="damLain2">2. Secara umum terlihat bersih, rapih dan teratur</string>
+    <string name="damLain3">3. Ada contoh produk air minum sebagai sampel</string>
+    <!--DAM FINISH-->
+
+    <!--TTU START-->
+    <string name="jenisTTU1">Penilaian Hygiene Sanitasi Tempat Ibadah</string>
+    <string name="ttu1_umum1">Nama Tempat Ibadah</string>
+    <string name="ttu1_umum2">Nama Pengurus</string>
+    <string name="ttu1_umum3">Alamat</string>
+    <string name="ttu1_umum4">Jumlah Jamaah</string>
+    <string name="ttu1_umum5">Tanggal Penilaian</string>
+
+    <string name="ttu1_lingkungan"><b>Lingkungan</b></string>
+    <string name="ttu1_lingkungan1"><b>1.lokasi</b></string>
+    <string name="ttu1_lingkungan1a">a.Tidak terletak di daerah banjir</string>
+    <string name="ttu1_lingkungan1b">b.Sesuai dengan perencanaan tata kota</string>
+
+    <string name="ttu1_lingkungan2"><b>2.Lingkungan termasuk halaman </b></string>
+    <string name="ttu1_lingkungan2a">a.Bersih dan indah</string>
+    <string name="ttu1_lingkungan2b">b.Sistem drainase berfungsi baik</string>
+    <string name="ttu1_lingkungan2c">c.Tidak terdapat genangan air</string>
+
+    <string name="ttu1_bangunan"><b>Bangunan</b></string>
+    <string name="ttu1_bangunan3"><b>3.Lantai</b></string>
+    <string name="ttu1_bangunan3a">a.Mudah dibersihkan</string>
+    <string name="ttu1_bangunan3b">b.Tidak retak, tidak licin, dan permukaan rata</string>
+    <string name="ttu1_bangunan3c">c.Kedap air</string>
+
+    <string name="ttu1_bangunan4"><b>4.Dinding</b></string>
+    <string name="ttu1_bangunan4a">a.Bersih</string>
+    <string name="ttu1_bangunan4b">b.Kedap air</string>
+    <string name="ttu1_bangunan4c">c.Berwarna terang</string>
+
+    <string name="ttu1_bangunan5"><b>5.Atap dan talang</b></string>
+    <string name="ttu1_bangunan5a">a.Tidak bocor</string>
+    <string name="ttu1_bangunan5b">b.Tidak terjadi genangan air</string>
+
+    <string name="ttu1_bangunan6"><b>6.Tangga</b></string>
+    <string name="ttu1_bangunan6a">a.Lebar anak tangga minimal 30 cm</string>
+    <string name="ttu1_bangunan6b">b.Tinggi anak tangga maksimal 20 cm</string>
+    <string name="ttu1_bangunan6c">c.Ada pegangan tangan</string>
+    <string name="ttu1_bangunan6d">d.lebar tangga > sama 150 cm</string>
+
+    <string name="ttu1_bangunan7"><b>7.Langit-langit</b></string>
+    <string name="ttu1_bangunan7a">a.Tinggi dari lantai minimal 2,75 cm</string>
+    <string name="ttu1_bangunan7b">b.Kuat</string>
+    <string name="ttu1_bangunan7c">c.Berwarna terang</string>
+
+    <string name="ttu1_bangunan8"><b>8.Pagar</b></string>
+    <string name="ttu1_bangunan8a">a.Kuat</string>
+    <string name="ttu1_bangunan8b">b.Terlihat batas yang jelas</string>
+
+    <string name="ttu1_bangunan9"><b>9.Pencahayaan</b></string>
+    <string name="ttu1_bangunan9a">a.Cukup terang</string>
+    <string name="ttu1_bangunan9b">b.Tidak menyilaukan</string>
+
+    <string name="ttu1_bangunan10"><b>10.Ventilasi(pilih salah satu a/b)</b></string>
+    <string name="ttu1_bangunan10a">  A.Alam = Lubang ventilasi minimal 15% dari luas lantai</string>
+    <string name="ttu1_bangunan10b"> B.Mekani = Menggunakan AC, Van, Exhauster</string>
+
+    <string name="ttu1_bangunan11"><b>11.Peralatan Ibadah (tikar, karpet, sajadah, kursi, dll)</b></string>
+    <string name="ttu1_bangunan11a">a.Bersih dan tidak lembab</string>
+    <string name="ttu1_bangunan11b">b.Dibersihkan dan dijemur secara periodik</string>
+    <string name="ttu1_bangunan11c">c.Tersedia tempat penyimpanan peralatan ibadah</string>
+
+    <string name="ttu1_fasilitas"><b>Fasilitas Sanitasi</b></string>
+    <string name="ttu1_fasilitas12"><b>12.Air Bersih</b></string>
+    <string name="ttu1_fasilitas12a">a.Tersedia dengan jumlah yang cukup</string>
+    <string name="ttu1_fasilitas12b">b.Memenuhi persyaratan fisik</string>
+
+    <string name="ttu1_fasilitas13"><b>13.Tempat Wudhu</b></string>
+    <string name="ttu1_fasilitas13a">a.Bersih dan terpelihara</string>
+    <string name="ttu1_fasilitas13b">b.Menggunakan air yang mengalir</string>
+    <string name="ttu1_fasilitas13c">c.Terpisah antara pria dan wanita</string>
+    <string name="ttu1_fasilitas13d">d.Tersedia dalam jumlah yang cukup</string>
+
+    <string name="ttu1_fasilitas14"><b>14.Pembuangan air limbah</b></string>
+    <string name="ttu1_fasilitas14a">a.Terpisah dengan saluran pembuangan air hujan</string>
+    <string name="ttu1_fasilitas14b">b.Memenuhi persyaratan</string>
+
+    <string name="ttu1_fasilitas15"><b>15.Tempat sampah</b></string>
+    <string name="ttu1_fasilitas15a">a.Tersedia dengan jumlah yang cukup</string>
+    <string name="ttu1_fasilitas15b">b.Terbuat dari bahan yang kuat, tahan karat, kedap air dan tertutup</string>
+
+    <string name="ttu1_fasilitas16"><b>16. Jamban dan urinoir</b></string>
+    <string name="ttu1_fasilitas16a">a.Bersih dan tidak berbau</string>
+    <string name="ttu1_fasilitas16b">b.Lantai kedap air, miring ke arah saluran pembuangan</string>
+    <string name="ttu1_fasilitas16c">c.Jamban pria dan wanita terpisah 	</string>
+    <!--TTU FINISH-->
+
     <!--FORM START-->
     <string name="formRS">Berikut adalah form untuk pendataan <b>Rumah Sehat</b>, silahkan Anda
+    isi semua field ini sesuai prosedur yang telah diurutkan</string>
+    <string name="formDAM">Berikut adalah form untuk pendataan <b>Depot Air Minum</b>, silahkan Anda
     isi semua field ini sesuai prosedur yang telah diurutkan</string>
     <!--FORM FINISH-->
 

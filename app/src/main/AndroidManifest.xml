@@ -22,9 +22,14 @@
         <activity
             android:name=".login"
             android:noHistory="true" />
-        <activity android:name=".rumah_sehat"
-            android:label="Rumah Sehat"
+        <activity
+            android:name=".rumah_sehat"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Rumah Sehat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity android:name=".dam"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Depot Air Minum"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
     </application>
 

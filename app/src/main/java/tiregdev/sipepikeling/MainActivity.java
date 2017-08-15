@@ -15,11 +15,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        final RippleView rippleView = (RippleView) findViewById(R.id.rs);
-        rippleView.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+        final RippleView rippleViewRS = (RippleView) findViewById(R.id.rs);
+        rippleViewRS.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
                 Intent w = new Intent(MainActivity.this, rumah_sehat.class);
+                startActivity(w);
+            }
+        });
+
+        final RippleView rippleViewDAM = (RippleView) findViewById(R.id.dam);
+        rippleViewDAM.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent w = new Intent(MainActivity.this, dam.class);
                 startActivity(w);
             }
         });
