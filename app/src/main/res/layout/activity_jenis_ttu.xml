@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tiregdev.sipepikeling.jenis_ttu">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU1"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/tempat_ibadah"
+                        android:text="@string/jenisTTU1"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU2"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/rumah_sakit"
+                        android:text="@string/jenisTTU2"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU3"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/industri_rumahan"
+                        android:text="@string/jenisTTU3"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU4"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/pasar"
+                        android:text="@string/jenisTTU4"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU5"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/sd"
+                        android:text="@string/jenisTTU5"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU6"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/pesantren"
+                        android:text="@string/jenisTTU6"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU7"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/industri_rumahan"
+                        android:text="@string/jenisTTU7"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU8"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/kolam_renang"
+                        android:text="@string/jenisTTU8"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU9"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/boga"
+                        android:text="@string/jenisTTU9"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

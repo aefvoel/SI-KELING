@@ -27,10 +27,38 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Rumah Sehat"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
-        <activity android:name=".dam"
+        <activity
+            android:name=".dam"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Depot Air Minum"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".jenis_sab"
+            android:label="Jenis SAB" />
+        <activity
+            android:name=".sab_pompa"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Jenis Pompa"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".sab_sumur_gali"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Jenis Sumur Gali"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".sab_sumur_gali_plus"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Jenis Sumur Gali Plus"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".jenis_ttu"
+            android:label="Jenis Tempat-Tempat Umum" />
+        <activity
+            android:name=".ttu_ibadah"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Tempat Ibadah"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity android:name=".ttu_tpm"></activity>
     </application>
 
 </manifest>

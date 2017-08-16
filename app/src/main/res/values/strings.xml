@@ -168,15 +168,17 @@
     <!--RS FINISH-->
 
     <!--SAB START-->
-    <string name="jenisSAB1"><b>POMPA TANGAN DANGKAL/ DALAM/ LISTRIK KETERANGAN UMUM</b></string>
+    <string name="jenisSAB1"><b>POMPA TANGAN DANGKAL/ DALAM/ LISTRIK</b></string>
     <string name="ketSAB_ketUmum"><b>KETERANGAN UMUM</b></string>
-    <string name="ketSAB_ketUmum1">1. Lokasi</string>
-    <string name="ketSAB_ketUmum2">2. Kode Sarana</string>
-    <string name="ketSAB_ketUmum3">3. Pemilik Sarana</string>
-    <string name="ketSAB_ketUmum4">4. Tanggal kunjungan</string>
-    <string name="ketSAB_ketUmum5">5. Apakah telah diambil sampel airnya</string>
-    <string name="ketSAB_ketUmum6">6. Nomor kode sampel air</string>
-    <string name="ketSAB_ketUmum7">7. Golongan koloform/ 100ml</string>
+    <string name="ketSAB_ketUmum1">Lokasi</string>
+    <string name="ketSAB_ketUmum1a">Puskesmas</string>
+    <string name="ketSAB_ketUmum1b">Desa/Kelurahan</string>
+    <string name="ketSAB_ketUmum2">Kode Sarana</string>
+    <string name="ketSAB_ketUmum3">Pemilik Sarana</string>
+    <string name="ketSAB_ketUmum4">Tanggal kunjungan</string>
+    <string name="ketSAB_ketUmum5">Apakah telah diambil sampel airnya</string>
+    <string name="ketSAB_ketUmum6">Nomor kode sampel air</string>
+    <string name="ketSAB_ketUmum7">Golongan koloform/ 100ml</string>
     <string name="ketSAB_ketUmum8">8. Apakah airnya jernih?</string>
     <string name="ketSAB_ketUmum9">9. Apakah airnya berwarna?</string>
     <string name="ketSAB_ketUmum10">10. Apakah airnya berasa?</string>
@@ -216,6 +218,11 @@
     <string name="SAB3_DiagKhusus9">9. Apakah dudukan pompa tangan yang berbatasan dengan lantainya kurang rapat/ lepas (yang memungkinkan air merembes masuk kedalam saluran pompa tangan)</string>
     <string name="SAB3_DiagKhusus10">10. Apakah dinding sumur tidak cukup rapat disemen sepanjang kedalaman 3m dibawah permukaan?</string>
     <string name="SAB3_DiagKhusus11">11. Apakah penutup sumur tidak bersih/ tidak ada?</string>
+
+    <string name="jenisSAB4">Perpiaan/PDAM</string>
+    <string name="jenisSAB5">Mata Air</string>
+    <string name="YA">YA</string>
+    <string name="TIDAK">TIDAK</string>
     <!--SAB FINISH-->
 
     <!--DAM START-->
@@ -285,89 +292,312 @@
     <!--DAM FINISH-->
 
     <!--TTU START-->
-    <string name="jenisTTU1">Penilaian Hygiene Sanitasi Tempat Ibadah</string>
+    <string name="jenisTTU1_ket">Penilaian Hygiene Sanitasi Tempat Ibadah</string>
     <string name="ttu1_umum1">Nama Tempat Ibadah</string>
     <string name="ttu1_umum2">Nama Pengurus</string>
     <string name="ttu1_umum3">Alamat</string>
-    <string name="ttu1_umum4">Jumlah Jamaah</string>
+    <string name="ttu1_umum4">Jumlah Jamaah/orang</string>
     <string name="ttu1_umum5">Tanggal Penilaian</string>
 
     <string name="ttu1_lingkungan"><b>Lingkungan</b></string>
-    <string name="ttu1_lingkungan1"><b>1.lokasi</b></string>
-    <string name="ttu1_lingkungan1a">a.Tidak terletak di daerah banjir</string>
-    <string name="ttu1_lingkungan1b">b.Sesuai dengan perencanaan tata kota</string>
+    <string name="ttu1_lingkungan1"><b>1. Lokasi</b></string>
+    <string name="ttu1_lingkungan1a">a. Tidak terletak di daerah banjir</string>
+    <string name="ttu1_lingkungan1b">b. Sesuai dengan perencanaan tata kota</string>
 
-    <string name="ttu1_lingkungan2"><b>2.Lingkungan termasuk halaman </b></string>
-    <string name="ttu1_lingkungan2a">a.Bersih dan indah</string>
-    <string name="ttu1_lingkungan2b">b.Sistem drainase berfungsi baik</string>
-    <string name="ttu1_lingkungan2c">c.Tidak terdapat genangan air</string>
+    <string name="ttu1_lingkungan2"><b>2. Lingkungan termasuk halaman </b></string>
+    <string name="ttu1_lingkungan2a">a. Bersih dan indah</string>
+    <string name="ttu1_lingkungan2b">b. Sistem drainase berfungsi baik</string>
+    <string name="ttu1_lingkungan2c">c. Tidak terdapat genangan air</string>
 
     <string name="ttu1_bangunan"><b>Bangunan</b></string>
-    <string name="ttu1_bangunan3"><b>3.Lantai</b></string>
-    <string name="ttu1_bangunan3a">a.Mudah dibersihkan</string>
-    <string name="ttu1_bangunan3b">b.Tidak retak, tidak licin, dan permukaan rata</string>
-    <string name="ttu1_bangunan3c">c.Kedap air</string>
+    <string name="ttu1_bangunan3"><b>3. Lantai</b></string>
+    <string name="ttu1_bangunan3a">a. Mudah dibersihkan</string>
+    <string name="ttu1_bangunan3b">b. Tidak retak, tidak licin, dan permukaan rata</string>
+    <string name="ttu1_bangunan3c">c. Kedap air</string>
 
-    <string name="ttu1_bangunan4"><b>4.Dinding</b></string>
-    <string name="ttu1_bangunan4a">a.Bersih</string>
-    <string name="ttu1_bangunan4b">b.Kedap air</string>
-    <string name="ttu1_bangunan4c">c.Berwarna terang</string>
+    <string name="ttu1_bangunan4"><b>4. Dinding</b></string>
+    <string name="ttu1_bangunan4a">a. Bersih</string>
+    <string name="ttu1_bangunan4b">b. Kedap air</string>
+    <string name="ttu1_bangunan4c">c. Berwarna terang</string>
 
-    <string name="ttu1_bangunan5"><b>5.Atap dan talang</b></string>
-    <string name="ttu1_bangunan5a">a.Tidak bocor</string>
-    <string name="ttu1_bangunan5b">b.Tidak terjadi genangan air</string>
+    <string name="ttu1_bangunan5"><b>5. Atap dan talang</b></string>
+    <string name="ttu1_bangunan5a">a. Tidak bocor</string>
+    <string name="ttu1_bangunan5b">b. Tidak terjadi genangan air</string>
 
-    <string name="ttu1_bangunan6"><b>6.Tangga</b></string>
-    <string name="ttu1_bangunan6a">a.Lebar anak tangga minimal 30 cm</string>
-    <string name="ttu1_bangunan6b">b.Tinggi anak tangga maksimal 20 cm</string>
-    <string name="ttu1_bangunan6c">c.Ada pegangan tangan</string>
-    <string name="ttu1_bangunan6d">d.lebar tangga > sama 150 cm</string>
+    <string name="ttu1_bangunan6"><b>6. Tangga</b></string>
+    <string name="ttu1_bangunan6a">a. Lebar anak tangga minimal 30 cm</string>
+    <string name="ttu1_bangunan6b">b. Tinggi anak tangga maksimal 20 cm</string>
+    <string name="ttu1_bangunan6c">c. Ada pegangan tangan</string>
+    <string name="ttu1_bangunan6d">d. lebar tangga > sama 150 cm</string>
 
-    <string name="ttu1_bangunan7"><b>7.Langit-langit</b></string>
-    <string name="ttu1_bangunan7a">a.Tinggi dari lantai minimal 2,75 cm</string>
-    <string name="ttu1_bangunan7b">b.Kuat</string>
-    <string name="ttu1_bangunan7c">c.Berwarna terang</string>
+    <string name="ttu1_bangunan7"><b>7. Langit-langit</b></string>
+    <string name="ttu1_bangunan7a">a. Tinggi dari lantai minimal 2,75 cm</string>
+    <string name="ttu1_bangunan7b">b. Kuat</string>
+    <string name="ttu1_bangunan7c">c. Berwarna terang</string>
 
-    <string name="ttu1_bangunan8"><b>8.Pagar</b></string>
-    <string name="ttu1_bangunan8a">a.Kuat</string>
-    <string name="ttu1_bangunan8b">b.Terlihat batas yang jelas</string>
+    <string name="ttu1_bangunan8"><b>8. Pagar</b></string>
+    <string name="ttu1_bangunan8a">a. Kuat</string>
+    <string name="ttu1_bangunan8b">b. Terlihat batas yang jelas</string>
 
-    <string name="ttu1_bangunan9"><b>9.Pencahayaan</b></string>
-    <string name="ttu1_bangunan9a">a.Cukup terang</string>
-    <string name="ttu1_bangunan9b">b.Tidak menyilaukan</string>
+    <string name="ttu1_bangunan9"><b>9. Pencahayaan</b></string>
+    <string name="ttu1_bangunan9a">a. Cukup terang</string>
+    <string name="ttu1_bangunan9b">b. Tidak menyilaukan</string>
 
-    <string name="ttu1_bangunan10"><b>10.Ventilasi(pilih salah satu a/b)</b></string>
-    <string name="ttu1_bangunan10a">  A.Alam = Lubang ventilasi minimal 15% dari luas lantai</string>
-    <string name="ttu1_bangunan10b"> B.Mekani = Menggunakan AC, Van, Exhauster</string>
+    <string name="ttu1_bangunan10"><b>10. Ventilasi(pilih salah satu a/b)</b></string>
+    <string name="ttu1_bangunan10a">A. Alam = Lubang ventilasi minimal 15% dari luas lantai</string>
+    <string name="ttu1_bangunan10b">B. Mekani = Menggunakan AC, Van, Exhauster</string>
 
-    <string name="ttu1_bangunan11"><b>11.Peralatan Ibadah (tikar, karpet, sajadah, kursi, dll)</b></string>
-    <string name="ttu1_bangunan11a">a.Bersih dan tidak lembab</string>
-    <string name="ttu1_bangunan11b">b.Dibersihkan dan dijemur secara periodik</string>
-    <string name="ttu1_bangunan11c">c.Tersedia tempat penyimpanan peralatan ibadah</string>
+    <string name="ttu1_bangunan11"><b>11. Peralatan Ibadah (tikar, karpet, sajadah, kursi, dll)</b></string>
+    <string name="ttu1_bangunan11a">a. Bersih dan tidak lembab</string>
+    <string name="ttu1_bangunan11b">b. Dibersihkan dan dijemur secara periodik</string>
+    <string name="ttu1_bangunan11c">c. Tersedia tempat penyimpanan peralatan ibadah</string>
 
     <string name="ttu1_fasilitas"><b>Fasilitas Sanitasi</b></string>
-    <string name="ttu1_fasilitas12"><b>12.Air Bersih</b></string>
-    <string name="ttu1_fasilitas12a">a.Tersedia dengan jumlah yang cukup</string>
-    <string name="ttu1_fasilitas12b">b.Memenuhi persyaratan fisik</string>
+    <string name="ttu1_fasilitas12"><b>12. Air Bersih</b></string>
+    <string name="ttu1_fasilitas12a">a. Tersedia dengan jumlah yang cukup</string>
+    <string name="ttu1_fasilitas12b">b. Memenuhi persyaratan fisik</string>
 
-    <string name="ttu1_fasilitas13"><b>13.Tempat Wudhu</b></string>
-    <string name="ttu1_fasilitas13a">a.Bersih dan terpelihara</string>
-    <string name="ttu1_fasilitas13b">b.Menggunakan air yang mengalir</string>
-    <string name="ttu1_fasilitas13c">c.Terpisah antara pria dan wanita</string>
-    <string name="ttu1_fasilitas13d">d.Tersedia dalam jumlah yang cukup</string>
+    <string name="ttu1_fasilitas13"><b>13. Tempat Wudhu</b></string>
+    <string name="ttu1_fasilitas13a">a. Bersih dan terpelihara</string>
+    <string name="ttu1_fasilitas13b">b. Menggunakan air yang mengalir</string>
+    <string name="ttu1_fasilitas13c">c. Terpisah antara pria dan wanita</string>
+    <string name="ttu1_fasilitas13d">d. Tersedia dalam jumlah yang cukup</string>
 
-    <string name="ttu1_fasilitas14"><b>14.Pembuangan air limbah</b></string>
-    <string name="ttu1_fasilitas14a">a.Terpisah dengan saluran pembuangan air hujan</string>
-    <string name="ttu1_fasilitas14b">b.Memenuhi persyaratan</string>
+    <string name="ttu1_fasilitas14"><b>14. Pembuangan air limbah</b></string>
+    <string name="ttu1_fasilitas14a">a. Terpisah dengan saluran pembuangan air hujan</string>
+    <string name="ttu1_fasilitas14b">b. Memenuhi persyaratan</string>
 
-    <string name="ttu1_fasilitas15"><b>15.Tempat sampah</b></string>
-    <string name="ttu1_fasilitas15a">a.Tersedia dengan jumlah yang cukup</string>
-    <string name="ttu1_fasilitas15b">b.Terbuat dari bahan yang kuat, tahan karat, kedap air dan tertutup</string>
+    <string name="ttu1_fasilitas15"><b>15. Tempat sampah</b></string>
+    <string name="ttu1_fasilitas15a">a. Tersedia dengan jumlah yang cukup</string>
+    <string name="ttu1_fasilitas15b">b. Terbuat dari bahan yang kuat, tahan karat, kedap air dan tertutup</string>
 
     <string name="ttu1_fasilitas16"><b>16. Jamban dan urinoir</b></string>
-    <string name="ttu1_fasilitas16a">a.Bersih dan tidak berbau</string>
-    <string name="ttu1_fasilitas16b">b.Lantai kedap air, miring ke arah saluran pembuangan</string>
-    <string name="ttu1_fasilitas16c">c.Jamban pria dan wanita terpisah 	</string>
+    <string name="ttu1_fasilitas16a">a. Bersih dan tidak berbau</string>
+    <string name="ttu1_fasilitas16b">b. Lantai kedap air, miring ke arah saluran pembuangan</string>
+    <string name="ttu1_fasilitas16c">c. Jamban pria dan wanita terpisah</string>
+
+
+    <string name="ttu2_umum1">Nama Rumah Makan/Restoran</string>
+    <string name="ttu2_umum2">Nama Pengusaha</string>
+    <string name="ttu2_umum3">Jumlah Karyawan</string>
+    <string name="ttu2_umum4">Jumlah Penjamah</string>
+    <string name="ttu2_umum5">Nomor/Tanggal Izin Usaha</string>
+
+    <string name="ttu2_A"><b>A. Lokasi &amp; Bangunan</b></string>
+    <string name="ttu2_A1"><b>1. Lokasi</b></string>
+    <string name="ttu2_A1a">a. Tidak berada pada arah angina dari sumber pencemaran debu, asap, bau dan cemaran lainnya</string>
+    <string name="ttu2_A1b">b. Tidak berada pada jarak \u003c100 meter dari sumber pencemaran debu, asap, bau dan cemaran lainnya</string>
+
+    <string name="ttu2_A2"><b>2. Bangunan</b></string>
+    <string name="ttu2_A2a">a. Terpisah dengan tempat tinggal termasuk tempat tidur</string>
+    <string name="ttu2_A2b">b. Kokoh/kuat/permananen</string>
+    <string name="ttu2_A2c">c. Rapat serangga</string>
+    <string name="ttu2_A2d">d. Rapat tikus</string>
+
+    <string name="ttu2_A3"><b>3. Pembagian Ruang</b></string>
+    <string name="ttu2_A3a">a. Terdiri dari dapur dan ruang makanan</string>
+    <string name="ttu2_A3b">b. Ada tiolet dan jamban</string>
+    <string name="ttu2_A3c">c. Ada gudang bahan makanan</string>
+    <string name="ttu2_A3d">d. Ada ruang karyawan</string>
+    <string name="ttu2_A3e">e. Ada ruang administrasi</string>
+    <string name="ttu2_A3f">f. Ada gudang peralatan</string>
+
+    <string name="ttu2_A4"><b>4. Lantai</b></string>
+    <string name="ttu2_A4a">a. Bersih</string>
+    <string name="ttu2_A4b">b. Kedap air</string>
+    <string name="ttu2_A4c">c. Tidak licin</string>
+    <string name="ttu2_A4d">d. Rata</string>
+    <string name="ttu2_A4e">e. Kering</string>
+    <string name="ttu2_A4f">f. Konus</string>
+
+    <string name="ttu2_A5"><b>5. Dinding</b></string>
+    <string name="ttu2_A5a">a. Kedap air</string>
+    <string name="ttu2_A5b">b. Rata</string>
+    <string name="ttu2_A5c">c. Bersih</string>
+
+    <string name="ttu2_A6"><b>6. Ventilasi</b></string>
+    <string name="ttu2_A6a">a. Tersedia dan berfungsi dengan baik</string>
+    <string name="ttu2_A6b">b. Menghilangkan bau tidak enak</string>
+    <string name="ttu2_A6c">c. Cukup menjamin rasa nyaman</string>
+
+    <string name="ttu2_A7"><b>7. Pencahayaan/Penerangan</b></string>
+    <string name="ttu2_A7a">a. Tersebar merata disetiap ruangan</string>
+    <string name="ttu2_A7b">b. Intensitas cahaya 10 fc</string>
+    <string name="ttu2_A7c">c. Tidak menyilaukan</string>
+
+    <string name="ttu2_A8"><b>8. Atap</b></string>
+    <string name="ttu2_A8a">a. Tidak menjadi sarang tikus dan serangga</string>
+    <string name="ttu2_A8b">b. Tidak bocor</string>
+    <string name="ttu2_A8c">c. Cukup landai</string>
+
+    <string name="ttu2_A9"><b>9. Langit-langit</b></string>
+    <string name="ttu2_A9a">a. Tinggi minimal 2,4 meter</string>
+    <string name="ttu2_A9b">b. Rata dan bersih</string>
+    <string name="ttu2_A9c">c. Tidak terdapat lubang-lubang</string>
+
+    <string name="ttu2_A10"><b>10. Pintu</b></string>
+    <string name="ttu2_A10a">a. Rapat serangga dan tikus</string>
+    <string name="ttu2_A10b">b. Menutup dengan baik dan membuka arah luar</string>
+    <string name="ttu2_A10c">c. Terbuat dari bahan yang kuat dan mudah dibersihkan</string>
+
+    <string name="ttu2_B"><b>B. Fasilitas Sanatasi</b></string>
+    <string name="ttu2_B11"><b>11. Air bersih</b></string>
+    <string name="ttu2_B11a">a. Jumlah mencukupi</string>
+    <string name="ttu2_B11b">b. Tidak berbau, tidak berasa dan tidak berwarna</string>
+    <string name="ttu2_B11c">c. Angka kuman tidak melebihi nilai ambang batas</string>
+    <string name="ttu2_B11d">d. Kadar bahan kimia tidak melebihi nilai ambang batas</string>
+
+    <string name="ttu2_B12"><b>12. Pembuangan air limbah</b></string>
+    <string name="ttu2_B12a">a. Air limbah mengalir dengan lancar</string>
+    <string name="ttu2_B12b">b. Terdapat grease trap</string>
+    <string name="ttu2_B12c">c. Saluran kedap air</string>
+    <string name="ttu2_B12d">d. Saluran tertutup</string>
+
+    <string name="ttu2_B13"><b>13. Toilet</b></string>
+    <string name="ttu2_B13a">a. Bersih</string>
+    <string name="ttu2_B13b">b. Letaknya tidak berhubungan langsung dengan dapur atau ruang makan</string>
+    <string name="ttu2_B13c">c. Tersedia air bersih yang cukup</string>
+    <string name="ttu2_B13d">d. Tersedia sabun dan alat pengering</string>
+    <string name="ttu2_B13e">e. Toilet pria dan wanita terpisah</string>
+
+    <string name="ttu2_B14"><b>14. Tempat sampah</b></string>
+    <string name="ttu2_B14a">a. Sampah diangkut tiap 24 jam</string>
+    <string name="ttu2_B14b">b. Di setiap rumah penghasil sampah tersedia tempat sampah</string>
+    <string name="ttu2_B14c">c. Dibuat dari bahan kedap air dan mempunyai tutup</string>
+    <string name="ttu2_B14d">d. Kapasitas tempat sampah terangkat oleh seorang petugas sampah</string>
+
+    <string name="ttu2_B15"><b>15. Tempat cuci tangan</b></string>
+    <string name="ttu2_B15a">a. Tersedia air cuci tangan yang mencukupi</string>
+    <string name="ttu2_B15b">b. Tersedia sabun/detergent dan alat pengering/lap</string>
+    <string name="ttu2_B15c">c. Jumlahnya cukup untuk pengunjung dan karyawan</string>
+
+    <string name="ttu2_B16"><b>16. Tempat mencuci peralatan</b></string>
+    <string name="ttu2_B16a">a. Tersedia air dingin yang cukup memadai</string>
+    <string name="ttu2_B16b">b. Tersedia air panas yang cukup memadai</string>
+    <string name="ttu2_B16c">c. Terbuat dari bahan yang kuat, aman dan halus</string>
+    <string name="ttu2_B16d">d. Terdiri dari tiga bilik/bak pencuci</string>
+
+    <string name="ttu2_B17"><b>17. Tempat pencuci bahan makanan</b></string>
+    <string name="ttu2_B17a">a. Tersedia air pencuci yang cukup </string>
+    <string name="ttu2_B17b">b. Terbuat dari bahan yang kuat, aman dan halus</string>
+    <string name="ttu2_B17c">c. Air pencuci yang dipakai mengandung larutan cuci hama</string>
+
+    <string name="ttu2_B18"><b>18. Locker Karyawan</b></string>
+    <string name="ttu2_B18a">a. Tersedia locker karyawan dari bahan yang kuat, mudah dibersihkan dan mempunyai tutup rapat</string>
+    <string name="ttu2_B18b">b. Jumlahnya cukup</string>
+    <string name="ttu2_B18c">c. Letaknya Locker dalam ruang tersendiri</string>
+    <string name="ttu2_B18d">d. Locker untuk karyawan pria terpisah dengan wanita</string>
+
+    <string name="ttu2_B19"><b>19. Peralatan pencegahan masuk serangga dan tikus</b></string>
+    <string name="ttu2_B19a">a. Setiap lubang ventilasi dipasang kawat kassa serangga</string>
+    <string name="ttu2_B19b">b. Setiap lubang ventilasi dipasang terali tius</string>
+    <string name="ttu2_B19c">c. Persilangan pipa dan dinding tertutup rapat</string>
+    <string name="ttu2_B19d">d. Tempat tandon air mempunyai tutup dan bebas jentik nyamuk</string>
+
+    <string name="ttu2_C"><b>C. Dapur, ruang makan &amp; gudang bahan makanan</b></string>
+    <string name="ttu2_C20"><b>20. Dapur</b></string>
+    <string name="ttu2_C20a">a. Bersih</string>
+    <string name="ttu2_C20b">b. Ada fasilitas penyimpanan makanan (kulkas, freezer)</string>
+    <string name="ttu2_C20c">c. Terseida fasilitas penyimpanan makanan panas(thermos panas, kompor panas, heater)</string>
+    <string name="ttu2_C20d">d. Ukuran dapur cukup memadai</string>
+    <string name="ttu2_C20e">e. Ada cangkup dan cerobong asap</string>
+    <string name="ttu2_C20f">f. Terpasang tulisan pesan-pesan hygiane bagi penjamah/karyawan</string>
+
+    <string name="ttu2_C21"><b>21. Ruang makan</b></string>
+    <string name="ttu2_C21a">a. Perlengkapan ruang makan selalu bersih</string>
+    <string name="ttu2_C21b">b. Ukuran ruang makan minimal 0.85 m2 per kursi tamu</string>
+    <string name="ttu2_C21c">c. Pintu masuk buka tutup otomatis</string>
+    <string name="ttu2_C21d">d. Tersedia fasilitas cuci tangan yang memenuhi estetika</string>
+    <string name="ttu2_C21e">e. Tempat peragaan makanan jadi tertutup</string>
+
+    <string name="ttu2_C22"><b>22. Gudang bahan makanan</b></string>
+    <string name="ttu2_C22a">a. Tidak terdapatn bahan lain selain bahan makanan</string>
+    <string name="ttu2_C22b">b. Tersedia rak-rak penempatan bahan makanan sesuai dengan ketentuan</string>
+    <string name="ttu2_C22c">c. Kapasitas gudang cukup memadai</string>
+    <string name="ttu2_C22d">d. Rapat serangga dan tikus</string>
+
+    <string name="ttu2_D"><b>D. Bahan Makanan dan Makanan Jadi</b></string>
+    <string name="ttu2_D23"><b>23. Bahan makanan</b></string>
+    <string name="ttu2_D23a">a. Kondisi fisik bahan makanan dalam keadaan baik</string>
+    <string name="ttu2_D23b">b. Angka kuman dan bahan kimia bahan makanan memenuhi persyaratan yang ditentukan</string>
+    <string name="ttu2_D23c">c. Bahan makanan berasal dari sumber resmi</string>
+    <string name="ttu2_D23d">d. Bahan makanan kemasan terdaftar pada Depkes RI</string>
+
+    <string name="ttu2_D24"><b>24. Makanan Jadi</b></string>
+    <string name="ttu2_D24a">a. Kondisi fisik makanan jadi dalam keadaan baik</string>
+    <string name="ttu2_D24b">b. Angka kuman dan bahan kimia makanan jadi memenuhi persyaratan yang ditentukan</string>
+    <string name="ttu2_D24c">c. Makanan jadi kemasan tidak ada tanda-tanda kerusakan danterdaftar pada Depkes RI</string>
+
+    <string name="ttu2_E"><b>E. Pengolahan Makanan</b></string>
+    <string name="ttu2_E25"><b>25. Proses Pengolahan</b></string>
+    <string name="ttu2_E25a">a. Tenaga pengolah memakai pakaian kerja dengan benar dan cara kerja yang bersih</string>
+    <string name="ttu2_E25b">b. Pengambilan makanan jadi menggunakan alat khusus</string>
+    <string name="ttu2_E25c">c. Menggunakan peralatan dengan benar</string>
+
+    <string name="ttu2_F"><b>F. Tempat Penyimpanan bahan makanan dan makanan jadi</b></string>
+    <string name="ttu2_F26"><b>26. Penyimpanan bahan makanan</b></string>
+    <string name="ttu2_F26a">a. Suhu dan kelembapan penyimpanan sesuai dengan persyaratan jenis makanan</string>
+    <string name="ttu2_F26b">b. Ketebalan penyimpanan sesuai denagn persyaratan jenis makanan</string>
+    <string name="ttu2_F26c">c. Penempatanya terpisah dengan makanan jadi</string>
+    <string name="ttu2_F26d">d. Tempatnya bersih dan terpelihara</string>
+    <string name="ttu2_F26e">e. Disimpan dalam aturan sejenis dan disusun dalam rak-rak</string>
+
+    <string name="ttu2_F27"><b>27. Penyimpanan makanan jadi</b></string>
+    <string name="ttu2_F27a">a. Suhu dan waktu penyimpanan sesuai dengan persyaratan jenis makanan jadi</string>
+    <string name="ttu2_F27b">b. Cara penyimpanan tertutup</string>
+
+    <string name="ttu2_G"><b>G. Penyajian makanan</b></string>
+    <string name="ttu2_G28"><b>28. Cara Penyajian</b></string>
+    <string name="ttu2_G28a">a. Suhu penyajian makanan hangat tidak kurang dari 60 derajat celcius</string>
+    <string name="ttu2_G28b">b. Pewadahan dan penjamah makanan jadi menggunakan alat yang bersih	</string>
+    <string name="ttu2_G28c">c. Cara membawa dan menyajikan makanan dengan tertutup</string>
+    <string name="ttu2_G28d">d. Penyajian makanan hatus pada tempat yang bersih</string>
+
+    <string name="ttu2_H"><b>H. Peralatan</b></string>
+    <string name="ttu2_H29"><b>29. Ketentuan Peralatan</b></string>
+    <string name="ttu2_H29a">a. Cara pencucian,pengeringan dan penyimpanan peralatan memenuhi persyaratan agar selalu dalam keadaan bersih sebelum digunakan</string>
+    <string name="ttu2_H29b">b. Peralatan dalam keadaan baik dan utuh</string>
+    <string name="ttu2_H29c">c. Peralatan makan dan minum tidak boleh mengandung angka kuman yang melebihi nilai ambang batas yang ditentukan</string>
+    <string name="ttu2_H29d">d. Permukaan alat yang konytak langsung dengan makanan tidak ada sudut mati dan halus</string>
+    <string name="ttu2_H29e">e. Peralatan yang kontak langsung dengan makanan tidak mengandung zat beracun</string>
+
+    <string name="ttu2_I"><b>I. Tenaga Kerja</b></string>
+    <string name="ttu2_I30"><b>30. Pengetahuan/sertifikat hygiane sanitasi makanan</b></string>
+    <string name="ttu2_I30a">a. Pemilik, pengusaha pernah mengikuti kursus/temu kerya</string>
+    <string name="ttu2_I30b">b. Supervisor pernah mengikuti kursus</string>
+    <string name="ttu2_I30c">c. Semua penjamah makanan pernah mengikuti kursus</string>
+    <string name="ttu2_I30d">d. salah seorang penjamah pernah mengikuti kursus</string>
+
+    <string name="ttu2_I31"><b>31. Pakaian Kerja</b></string>
+    <string name="ttu2_I31a">a. Bersih</string>
+    <string name="ttu2_I31b">b. Tersedia pakaian kerja seragam 2 stel atau lebih</string>
+    <string name="ttu2_I31c">c. Penggunaan khusus waktu kerja saja</string>
+    <string name="ttu2_I31d">d. Lengkap dan rapi</string>
+    <string name="ttu2_I31e">e. Tidak tersedia pakaian kerja seragam</string>
+
+    <string name="ttu2_I32"><b>32.Pemeriksaan Kesehatan</b></string>
+    <string name="ttu2_I32a">a.Karyawan/penjamah makanan berprilaku bersih dan berpakaian rapi</string>
+    <string name="ttu2_I32b">b.Pernah divaksinasi chotypha/thypoid</string>
+    <string name="ttu2_I32c">c.Check up penyakit khusus</string>
+    <string name="ttu2_I32d">d.Bila sakit tidak bekerja dan berobat ke dokter</string>
+    <string name="ttu2_I32e">e.Memiliki buku kesehatan karyawan</string>
+
+    <string name="ttu2_I33"><b>33.Personal hygiane</b></string>
+    <string name="ttu2_I33a">a.Setiap karyawan/penjamah makanan berprilaku bersih dan berpakaian rapi</string>
+    <string name="ttu2_I33b">b.Setiap mau kerja cuci tangan</string>
+    <string name="ttu2_I33c">c.Menutup mulut dengan sapu tangan atau bila mengambil makanan</string>
+    <string name="ttu2_I33d">d.Menggunakan alat yang sesuai dan bersih bila mengambil makanan	</string>
+
+    <string name="jenisTTU">Jenis Tempat-Tempat Umum</string>
+    <string name="jenisTTU1">Tempat Ibadah</string>
+    <string name="jenisTTU2">Rumah Sakit</string>
+    <string name="jenisTTU3">Industri Rumahan</string>
+    <string name="jenisTTU4">Pasar</string>
+    <string name="jenisTTU5">Sekolah Dasar</string>
+    <string name="jenisTTU6">Pesantren</string>
+    <string name="jenisTTU7">RM dan Restaurant</string>
+    <string name="jenisTTU8">Kolam Renang</string>
+    <string name="jenisTTU9">Pemerikasaan Jasa Boga</string>
     <!--TTU FINISH-->
 
     <!--FORM START-->
@@ -375,6 +605,12 @@
     isi semua field ini sesuai prosedur yang telah diurutkan</string>
     <string name="formDAM">Berikut adalah form untuk pendataan <b>Depot Air Minum</b>, silahkan Anda
     isi semua field ini sesuai prosedur yang telah diurutkan</string>
+    <string name="formSAB_j1">Berikut adalah form untuk Surveilans <b>Kualitas Air Bersih</b> formulir inspeksi sanitasi, silahkan Anda
+    isi semua field ini sesuai prosedur yang telah diurutkan</string>
+    <string name="formTTU_j1">Berikut adalah form untuk penilaian hygiene sanitasi <b>Tempat Ibadah</b>, silahkan Anda
+    isi semua field ini sesuai prosedur yang telah diurutkan</string>
+    <string name="formTTU_tpm">Berikut adalah form untuk pemeriksaan kelayakan hygiene sanitasi <b>Rumah Makan dan Restoran</b>,
+        silahkan Anda isi semua field ini sesuai prosedur yang telah diurutkan</string>
     <!--FORM FINISH-->
 
     <string name="uname">Username</string>

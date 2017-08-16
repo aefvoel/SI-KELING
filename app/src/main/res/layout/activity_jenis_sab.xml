@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tiregdev.sipepikeling.jenis_sab">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="5">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/jennisSAB1"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:rv_centered="true"
+            app:rv_color="@color/colorRipple"
+            app:rv_rippleDuration="150">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/pompa"
+                android:text="@string/jenisSAB1"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/jennisSAB2"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:rv_centered="true"
+            app:rv_color="@color/colorRipple"
+            app:rv_rippleDuration="150">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/sumur_gali"
+                android:text="@string/jenisSAB2"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/jennisSAB3"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:rv_centered="true"
+            app:rv_color="@color/colorRipple"
+            app:rv_rippleDuration="150">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/sumur_gali_plus"
+                android:text="@string/jenisSAB3"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/jennisSAB4"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:rv_centered="true"
+            app:rv_color="@color/colorRipple"
+            app:rv_rippleDuration="150">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/pdam"
+                android:text="@string/jenisSAB4"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/jennisSAB5"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:rv_centered="true"
+            app:rv_color="@color/colorRipple"
+            app:rv_rippleDuration="150">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/mata_air"
+                android:text="@string/jenisSAB5"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

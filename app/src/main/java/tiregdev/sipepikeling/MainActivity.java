@@ -32,5 +32,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(w);
             }
         });
+
+        final RippleView rippleViewSAB = (RippleView) findViewById(R.id.sab);
+        rippleViewSAB.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent w = new Intent(MainActivity.this, jenis_sab.class);
+                startActivity(w);
+            }
+        });
+
+        final RippleView rippleViewTTU = (RippleView) findViewById(R.id.ttu);
+        rippleViewTTU.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent w = new Intent(MainActivity.this, jenis_ttu.class);
+                startActivity(w);
+            }
+        });
+
     }
 }
