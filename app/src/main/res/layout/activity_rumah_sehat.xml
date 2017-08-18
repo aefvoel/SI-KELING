@@ -926,7 +926,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rectangle_green"
-                android:text="@string/next" />
+                android:text="@string/next2" />
 
         </LinearLayout>
     </ScrollView>

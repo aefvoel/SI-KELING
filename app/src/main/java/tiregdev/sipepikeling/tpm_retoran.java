@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-public class ttu_tpm extends AppCompatActivity {
+public class tpm_retoran extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ttu_tpm);
+        setContentView(R.layout.activity_tpm_restoran);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -22,7 +22,7 @@ public class ttu_tpm extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // todo: goto back activity from here
-                ttu_tpm.this.finish();
+                tpm_retoran.this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

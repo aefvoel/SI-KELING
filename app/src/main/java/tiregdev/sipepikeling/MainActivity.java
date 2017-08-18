@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final RippleView rippleViewSAB = (RippleView) findViewById(R.id.sab);
+        final RippleView rippleViewSAB = (RippleView) findViewById(R.id.tpm);
         rippleViewSAB.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Intent w = new Intent(MainActivity.this, jenis_sab.class);
+                Intent w = new Intent(MainActivity.this, jenis_tpm.class);
                 startActivity(w);
             }
         });

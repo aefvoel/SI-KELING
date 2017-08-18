@@ -52,16 +52,19 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
         <activity
             android:name=".jenis_ttu"
-            android:label="Jenis Tempat-Tempat Umum" />
+            android:label="Jenis TPU" />
         <activity
             android:name=".ttu_ibadah"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Tempat Ibadah"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
-        <activity android:name=".ttu_tpm"
+        <activity
+            android:name=".tpm_retoran"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Tempat Makan"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity android:name=".jenis_tpm"
+            android:label="Jenis TPM"/>
     </application>
 
 </manifest>

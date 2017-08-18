@@ -53,7 +53,7 @@
                 </com.andexert.library.RippleView>
 
                 <com.andexert.library.RippleView
-                    android:id="@+id/sab"
+                    android:id="@+id/tpm"
                     rv_centered="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -68,8 +68,8 @@
                         android:layout_centerHorizontal="true"
                         android:background="@null"
                         android:drawablePadding="10dp"
-                        android:drawableTop="@drawable/sab"
-                        android:text="@string/sab"
+                        android:drawableTop="@drawable/tpm"
+                        android:text="@string/tpm"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp" />
 
@@ -164,7 +164,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ketSAB" />
+                    android:text="@string/ketTPM" />
 
                 <TextView
                     android:layout_width="wrap_content"
