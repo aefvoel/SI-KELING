@@ -58,7 +58,10 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Tempat Ibadah"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
-        <activity android:name=".ttu_tpm"></activity>
+        <activity android:name=".ttu_tpm"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Tempat Makan"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
     </application>
 
 </manifest>

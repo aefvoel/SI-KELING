@@ -40,9 +40,9 @@
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_kk"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <EditText
                     android:layout_width="match_parent"
@@ -59,39 +59,39 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:hint="@string/jumlahkk" />
+                    android:hint="@string/jumlahkk"
+                    android:inputType="number" />
 
             </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 android:baselineAligned="false"
+                android:orientation="horizontal"
                 android:weightSum="3">
 
                 <Spinner
                     android:id="@+id/spinner_rt"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:entries="@array/rt_arrays"
+                    android:padding="15dp"
                     android:prompt="@string/rt_prompt" />
 
                 <Spinner
                     android:id="@+id/spinner_rw"
                     android:layout_width="0dp"
-                    android:layout_marginEnd="5dp"
-                    android:padding="15dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:entries="@array/rw_arrays"
+                    android:padding="15dp"
                     android:prompt="@string/rw_prompt" />
 
                 <android.support.design.widget.TextInputLayout
@@ -103,8 +103,8 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:hint="@string/nmrRmh"/>
+                        android:hint="@string/nmrRmh"
+                        android:inputType="number" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -805,13 +805,128 @@
 
             </RadioGroup>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#b7b7b7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ketPJB3"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ketPJB2"
+                android:textColor="@color/colorBlack" />
+
+            <RadioGroup
+                android:id="@+id/jentik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/YA" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TIDAK" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#b7b7b7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/RS_Jamban"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RS_JambanKet"
+                android:textColor="@color/colorBlack" />
+
+            <RadioGroup
+                android:id="@+id/RS_Jamban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS_Jamban1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS_Jamban2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS_Jamban3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS_Jamban4" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#b7b7b7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/RS_SPAL"
+                android:textColor="@color/colorBlack" />
+
+            <RadioGroup
+                android:id="@+id/RS_SPAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS_SPAL1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS_SPAL2" />
+
+            </RadioGroup>
+
             <Button
                 android:id="@+id/send"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rectangle_green"
-                android:text="@string/next"/>
+                android:text="@string/next" />
 
         </LinearLayout>
     </ScrollView>

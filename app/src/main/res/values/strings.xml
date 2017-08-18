@@ -14,11 +14,22 @@
     <!--DESC. MODUL START-->
     <string name="ket">Keterangan :</string>
     <string name="ketRS">1. RS = Rumah Sehat</string>
+        <string name="RS_Jamban"><b>Jamban Sehat</b></string>
+        <string name="RS_JambanKet">Menggunakan jamban?</string>
+        <string name="RS_Jamban1">Septik Tank</string>
+        <string name="RS_Jamban2">Koya/Empang</string>
+        <string name="RS_Jamban3">Kali</string>
+        <string name="RS_Jamban4">Helikopter</string>
+        <string name="RS_SPAL"><b>SPAL</b></string>
+        <string name="RS_SPAL1">Tertutup</string>
+        <string name="RS_SPAL2">Terbuka</string>
     <string name="ketSAB">2. SAB = Sumber Air Bersih</string>
     <string name="ketDAM">3. DAM = Depot Air Minum</string>
     <string name="ketTTU">4. TTU = Tempat-tempat Umum</string>
     <string name="ketTPM">5. TPM = Tempat Pengelolaan Makan</string>
     <string name="ketPJB">6. PJB = Pemantauan Jentik Berkala</string>
+        <string name="ketPJB3"><b>Pemantauan Jentik Berkala</b></string>
+        <string name="ketPJB2">Apakah ada jentik?</string>
     <string name="ketPPSD">7. Pendataan Sarana Sanitasi Dasar</string>
     <!--DESC. MODUL FINISH-->
 
@@ -379,6 +390,7 @@
 
     <string name="ttu2_umum1">Nama Rumah Makan/Restoran</string>
     <string name="ttu2_umum2">Nama Pengusaha</string>
+    <string name="ttu2_umumAlamat">Alamat</string>
     <string name="ttu2_umum3">Jumlah Karyawan</string>
     <string name="ttu2_umum4">Jumlah Penjamah</string>
     <string name="ttu2_umum5">Nomor/Tanggal Izin Usaha</string>
