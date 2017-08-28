@@ -11,6 +11,11 @@
     <string name="ppsd">PPSD</string>
     <!--MODUL FINISH-->
 
+    <string-array name="choice_array">
+        <item>YA</item>
+        <item>TIDAK</item>
+    </string-array>
+
     <!--DESC. MODUL START-->
     <string name="ket">Keterangan :</string>
     <string name="ketRS">1. RS = Rumah Sehat</string>

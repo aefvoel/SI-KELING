@@ -45,6 +45,7 @@
                 android:layout_marginTop="10dp">
 
                 <EditText
+                    android:id="@+id/namaKK"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/namakk" />
@@ -57,6 +58,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/jmlAnggota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/jumlahkk"
@@ -101,6 +103,7 @@
                     android:layout_weight="1">
 
                     <EditText
+                        android:id="@+id/noRumah"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/nmrRmh"
@@ -130,6 +133,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -162,6 +166,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -193,6 +198,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -224,6 +230,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -250,6 +257,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -276,6 +284,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -307,6 +316,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -338,6 +348,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -382,6 +393,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -425,6 +437,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -468,6 +481,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -511,6 +525,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -562,6 +577,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -594,6 +610,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -626,6 +643,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -658,6 +676,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -690,6 +709,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -742,6 +762,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -781,6 +802,7 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
+                android:id="@+id/rg19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -825,17 +847,19 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
-                android:id="@+id/jentik"
+                android:id="@+id/rg20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/jentik1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/YA" />
 
                 <RadioButton
+                    android:id="@+id/jentik2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/TIDAK" />
@@ -862,27 +886,31 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
-                android:id="@+id/RS_Jamban"
+                android:id="@+id/rg21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/RS_Jamban1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/RS_Jamban1" />
 
                 <RadioButton
+                    android:id="@+id/RS_Jamban2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/RS_Jamban2" />
 
                 <RadioButton
+                    android:id="@+id/RS_Jamban3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/RS_Jamban3" />
 
                 <RadioButton
+                    android:id="@+id/RS_Jamban4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/RS_Jamban4" />
@@ -903,17 +931,19 @@
                 android:textColor="@color/colorBlack" />
 
             <RadioGroup
-                android:id="@+id/RS_SPAL"
+                android:id="@+id/rg22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/RS_SPAL1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/RS_SPAL1" />
 
                 <RadioButton
+                    android:id="@+id/RS_SPAL2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/RS_SPAL2" />

@@ -60,6 +60,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/namaPuskesmas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/ketSAB_ketUmum1a"
@@ -73,10 +74,25 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/kodeSarana"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/ketSAB_ketUmum2" />
+                    android:hint="@string/ketSAB_ketUmum2"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_peSarana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pemilikSarana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ketSAB_ketUmum3"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -93,14 +109,16 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/sampel1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
+                    android:id="@+id/sampel2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -110,10 +128,11 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/noKode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:hint="@string/ketSAB_ketUmum6" />
+                    android:hint="@string/ketSAB_ketUmum6"
+                    android:inputType="number" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -123,10 +142,11 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/golongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/ketSAB_ketUmum7" />
+                    android:hint="@string/ketSAB_ketUmum7"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -138,19 +158,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/ketSAB_ketUmum8"
+                android:id="@+id/rg0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -161,19 +181,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/ketSAB_ketUmum9"
+                android:id="@+id/rg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -184,19 +204,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/ketSAB_ketUmum10"
+                android:id="@+id/rg2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -207,19 +227,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/ketSAB_ketUmum11"
+                android:id="@+id/rg3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -243,19 +263,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus1"
+                android:id="@+id/rg4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -266,19 +286,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus2"
+                android:id="@+id/rg5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -289,19 +309,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus3"
+                android:id="@+id/rg6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -312,19 +332,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus4"
+                android:id="@+id/rg7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -335,19 +355,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus5"
+                android:id="@+id/rg8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -358,19 +378,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus6"
+                android:id="@+id/rg9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -381,19 +401,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus7"
+                android:id="@+id/rg10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
@@ -404,19 +424,19 @@
                 android:textColor="@color/colorBlack"/>
 
             <RadioGroup
-                android:id="@+id/SAB1_DiagKhusus8"
+                android:id="@+id/rg11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/YA"/>
+                    android:text="@string/YA" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TIDAK"/>
+                    android:text="@string/TIDAK" />
 
             </RadioGroup>
 
