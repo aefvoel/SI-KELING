@@ -9,7 +9,8 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+import tiregdev.sipepikeling.activity.LoginActivity;
 
 public class splash_screen extends AppCompatActivity {
 
@@ -42,7 +43,7 @@ public class splash_screen extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(splash_screen.this,login.class);
+                    Intent intent = new Intent(splash_screen.this,LoginActivity.class);
                     startActivity(intent);
                 }
             }

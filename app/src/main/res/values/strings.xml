@@ -172,17 +172,9 @@
     <string name="perilakupenghuni5c">c. Setiap hari dibuang ketempat sampah</string>
 
     <string name="sampah"><b>SAMPAH</b></string>
-    <string name="sampah1"><b>1. Dipilah</b></string>
-    <string name="sampah1a">a. Organik</string>
-    <string name="sampah1a1">UPS</string>
-    <string name="sampah1a2">Lubang Biopori</string>
-    <string name="sampah1a3">Dll</string>
-
-    <string name="sampah2"><b>2. Tidak</b></string>
-    <string name="sampah2a">a. dibuang</string>
-    <string name="sampah2a1">ditimbun</string>
-    <string name="sampah2a2">dibakar</string>
-    <string name="sampah2a3">sembarang</string>
+    <string name="sampah1">Sampah yang digunakan?</string>
+    <string name="sampah2a1">Dipilah / Organik</string>
+    <string name="sampah2a2">Tidak Dipilah / Dibuang</string>
     <!--RS FINISH-->
 
     <!--SAB START-->

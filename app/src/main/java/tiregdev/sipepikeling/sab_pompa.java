@@ -1,6 +1,7 @@
 package tiregdev.sipepikeling;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -33,6 +34,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
+import tiregdev.sipepikeling.activity.LoginActivity;
+import tiregdev.sipepikeling.activity.MainActivity;
 import tiregdev.sipepikeling.model.SAB;
 import tiregdev.sipepikeling.utils.SessionString;
 
@@ -134,7 +137,6 @@ public class sab_pompa extends AppCompatActivity {
         String txtSudahDiambil = ((RadioButton)findViewById(rgSampelAir.getCheckedRadioButtonId())).getText().toString();
         String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
         String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
-        String kategori = "Pompa";
         int totalNilai = 0;
         String status = "";
         boolean hasValue = true;
@@ -167,7 +169,7 @@ public class sab_pompa extends AppCompatActivity {
             }else if(totalNilai >= 0 && totalNilai < 3 ) {
                 status = "Rendah (R)";
             }
-            submitSAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, kategori, waktu, txtAlamat, koordinat, idPetugas, totalNilai, status, nilaiSAB);
+            submitSAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, getIntent().getExtras().getString("kategori"), waktu, txtAlamat, koordinat, idPetugas, totalNilai, status, nilaiSAB, getIntent().getExtras().getString("idKK"));
         }else{
             Toast.makeText(this, "Error harap check semua opsi!", Toast.LENGTH_SHORT).show();
         }
@@ -175,12 +177,12 @@ public class sab_pompa extends AppCompatActivity {
 
     private void submitSAB(String txtNamaPuskesmas, String txtKodeSarana, String txtPemilikSarana, String txtSudahDiambil,
                            String txtKodeSampel, String txtGolongan, String kategori, String waktu, String alamat, String koordinat,
-                           String idPetugas, int totalNilai, String status, HashMap<String, String> nilaiSAB){
-        SAB setSAB = new SAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, kategori, waktu, alamat, koordinat, idPetugas, totalNilai, status);
-        String pushID = mDatabase.child("sab").push().getKey();
-        mDatabase.child("sab").child(pushID).child("data").setValue(setSAB);
-        mDatabase.child("sab").child(pushID).child("nilai").setValue(nilaiSAB);
+                           String idPetugas, int totalNilai, String status, HashMap<String, String> nilaiSAB, String idKK){
+        SAB setSAB = new SAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, kategori, waktu, alamat, koordinat, idPetugas, totalNilai, status, idKK);
+        mDatabase.child("sab").child(getIntent().getExtras().getString("idSAB")).child("data").setValue(setSAB);
+        mDatabase.child("sab").child(getIntent().getExtras().getString("idSAB")).child("nilai").setValue(nilaiSAB);
         Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getBaseContext(), MainActivity.class));
         finish();
     }
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="tiregdev.sipepikeling.MainActivity">
+    tools:context="tiregdev.sipepikeling.activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="3">
 
                 <com.andexert.library.RippleView
                     android:id="@+id/dam"
@@ -135,6 +135,28 @@
                         android:textSize="18sp" />
 
                 </com.andexert.library.RippleView>
+                <com.andexert.library.RippleView
+                    android:id="@+id/logout"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/common_google_signin_btn_icon_dark_normal"
+                        android:text="LogOut"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                </com.andexert.library.RippleView>
 
             </LinearLayout>
 
@@ -175,6 +197,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ketTTU" />
+
 
             </LinearLayout>
 

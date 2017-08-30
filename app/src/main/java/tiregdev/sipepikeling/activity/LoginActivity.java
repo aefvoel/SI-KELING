@@ -1,4 +1,4 @@
-package tiregdev.sipepikeling;
+package tiregdev.sipepikeling.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,15 +16,13 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
+import tiregdev.sipepikeling.R;
 import tiregdev.sipepikeling.utils.SessionString;
 
-public class login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     Button btnLogin;
     EditText frmEmail, frmPass;
@@ -96,7 +94,7 @@ public class login extends AppCompatActivity {
 
     private void checkLoginSession() {
         if(pref.getBoolean(SessionString.EXTRA_LOGIN_SESSION, false)){
-            startActivity(new Intent(login.this, MainActivity.class));
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
     }
@@ -120,7 +118,7 @@ public class login extends AppCompatActivity {
     }
 
     private void goToMainActivity() {
-        Intent intent = new Intent(login.this, MainActivity.class);
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);

@@ -13,9 +13,9 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<meta-data-->
-            <!--android:name="com.google.android.geo.API_KEY"-->
-            <!--android:value="@string/google_maps_key" />-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".splash_screen"
@@ -26,17 +26,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.MainActivity" />
         <activity
-            android:name=".login"
+            android:name=".activity.LoginActivity"
             android:noHistory="true" />
         <activity
-            android:name=".rumah_sehat"
+            android:name=".activity.RSActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Rumah Sehat"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
         <activity
-            android:name=".dam"
+            android:name=".activity.DAMActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Depot Air Minum"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />

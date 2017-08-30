@@ -1,4 +1,4 @@
-package tiregdev.sipepikeling;
+package tiregdev.sipepikeling.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +16,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,19 +30,19 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
+import tiregdev.sipepikeling.R;
+import tiregdev.sipepikeling.jenis_sab;
 import tiregdev.sipepikeling.model.KK;
 import tiregdev.sipepikeling.model.RS;
 import tiregdev.sipepikeling.utils.SessionString;
 
-import static android.support.v7.appcompat.R.styleable.MenuItem;
-import static android.support.v7.appcompat.R.styleable.SwitchCompat;
-
-public class rumah_sehat extends AppCompatActivity {
+public class RSActivity extends AppCompatActivity {
 
     EditText frmNamaKK, frmJmlAnggota, frmNoRumah;
     Spinner spinnerRT, spinnerRW;
@@ -131,7 +130,7 @@ public class rumah_sehat extends AppCompatActivity {
 
     }
     private void onSubmit(){
-        String txtNamaKK = frmNamaKK.getText().toString().trim();
+
         String txtJmlAnggota = frmJmlAnggota.getText().toString().trim();
         String txtNoRumah = frmNoRumah.getText().toString().trim();
         String txtRT = spinnerRT.getSelectedItem().toString().trim();
@@ -144,7 +143,7 @@ public class rumah_sehat extends AppCompatActivity {
         String spal = ((RadioButton)findViewById(rg22.getCheckedRadioButtonId())).getText().toString();
         String pjb = ((RadioButton)findViewById(rg20.getCheckedRadioButtonId())).getText().toString();
         String sampah = ((RadioButton)findViewById(rg19.getCheckedRadioButtonId())).getText().toString();
-        String idSAB = "-KsK2KLqeOE_RDVwUM_h";
+        String idSAB = mDatabase.child("sab").push().getKey();
 
 
         int totalNilai = 0;
@@ -175,17 +174,36 @@ public class rumah_sehat extends AppCompatActivity {
             }
         }
         if(hasValue){
-            KK setKK = new KK(alamat, txtNamaKK, txtJmlAnggota, txtNoRumah, idPetugas);
-            String pushKK = mDatabase.child("kk").push().getKey();
-            mDatabase.child("kk").child(pushKK).setValue(setKK);
+            if(frmNamaKK.getText().toString().contains(",")){
+                String[] splitNamaKK = frmNamaKK.getText().toString().trim().split(",");
+                for(int i = 0;i<splitNamaKK.length;i++){
+                    KK setKK = new KK(alamat, splitNamaKK[i], txtJmlAnggota, txtNoRumah, idPetugas);
+                    String pushKK = mDatabase.child("kk").push().getKey();
+                    mDatabase.child("kk").child(pushKK).setValue(setKK);
+                    if(totalNilai <= 1068){
+                        status = "Rumah Tidak Sehat";
+                    }else {
+                        status = "Rumah Sehat";
+                    }
 
-            if(totalNilai <= 1068){
-                status = "Rumah Tidak Sehat";
-            }else {
-                status = "Rumah Sehat";
+                    submitRS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, nilaiRS);
+                }
+
+            }else{
+                String txtNamaKK = frmNamaKK.getText().toString().trim();
+                KK setKK = new KK(alamat, txtNamaKK, txtJmlAnggota, txtNoRumah, idPetugas);
+                String pushKK = mDatabase.child("kk").push().getKey();
+                mDatabase.child("kk").child(pushKK).setValue(setKK);
+                if(totalNilai <= 1068){
+                    status = "Rumah Tidak Sehat";
+                }else {
+                    status = "Rumah Sehat";
+                }
+
+                submitRS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, nilaiRS);
             }
 
-            submitRS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, nilaiRS);
+
         }else{
             Toast.makeText(this, "Error harap check semua opsi!", Toast.LENGTH_SHORT).show();
         }
@@ -202,13 +220,10 @@ public class rumah_sehat extends AppCompatActivity {
         mDatabase.child("rs").child(pushDAM).child("nilai").setValue(nilaiRS);
 
         Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
-//        Intent intent = new Intent(getBaseContext(), jenis_sab.class);
-//        intent.putExtra("", namaKK);
-//        intent.putExtra("", jmlAnggota);
-//        intent.putExtra("", noRumah);
-//        intent.putExtra("", rt);
-//        intent.putExtra("", rw);
-//        startActivity(intent);
+        Intent intent = new Intent(getBaseContext(), jenis_sab.class);
+        intent.putExtra("idKK", pushKK);
+        intent.putExtra("idSAB", idSAB);
+        startActivity(intent);
         finish();
     }
 
@@ -252,7 +267,7 @@ public class rumah_sehat extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // todo: goto back activity from here
-                rumah_sehat.this.finish();
+                RSActivity.this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -1,7 +1,6 @@
-package tiregdev.sipepikeling;
+package tiregdev.sipepikeling.activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -16,7 +15,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,10 +33,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
+import tiregdev.sipepikeling.R;
 import tiregdev.sipepikeling.model.DAM;
 import tiregdev.sipepikeling.utils.SessionString;
 
-public class dam extends AppCompatActivity {
+public class DAMActivity extends AppCompatActivity {
 
     EditText frmNamaD, frmNamaP, frmAlamat;
     Button btnSend;
@@ -192,7 +191,7 @@ public class dam extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // todo: goto back activity from here
-                dam.this.finish();
+                DAMActivity.this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

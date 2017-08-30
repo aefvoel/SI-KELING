@@ -45,8 +45,8 @@ public class tpm_retoran extends AppCompatActivity {
     RadioButton[] rb;
     double[] nTPM = new double[] {6, 4,
                             4, 2, 2, 2,
-                            4, 2, 1, 1, 1,
-                            4, 2, 1, 1, 1,
+                            4, 2, 1, 1, 1, 1,
+                            4, 2, 1, 1, 1, 1,
                             4, 3, 3,
                             5, 3, 2,
                             5, 3, 2,
@@ -75,12 +75,12 @@ public class tpm_retoran extends AppCompatActivity {
                             2, 2, 4, 2,
                             3, 2, 2, 3, 0,
                             3, 2, 1, 2, 2,
-                            3, 3, 2, 2, 2 };
+                            3, 3, 2, 2 };
 
     double[] bTPM = new double[] {2, 2,
                             2, 2, 2, 2,
-                            1, 1, 1, 1, 1,
-                            0.5, 0.5, 0.5, 0.5, 0.5,
+                            1, 1, 1, 1, 1, 1,
+                            0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
                             0.5, 0.5, 0.5,
                             1, 1, 1,
                             1, 1, 1,
@@ -109,7 +109,7 @@ public class tpm_retoran extends AppCompatActivity {
                             4, 4, 4, 4,
                             2, 2, 2, 2, 2,
                             2, 2, 2, 2, 2,
-                            7, 7, 7, 7, 7 };
+                            7, 7, 7, 7 };
 
     private double lat;
     private double lng;
@@ -152,12 +152,14 @@ public class tpm_retoran extends AppCompatActivity {
             rg[i].removeAllViews();
             String[] yesNo = getResources().getStringArray(R.array.choice_array);
             rb = new RadioButton[2];
+
             for(int j = 0; j<rb.length; j++){
                 rb[j] = new RadioButton(this);
                 rb[j].setId(100 + j);
                 rb[j].setText(yesNo[j]);
                 rg[i].addView(rb[j]);
             }
+
         }
         btnSend = (Button)findViewById(R.id.send);
 
@@ -210,7 +212,7 @@ public class tpm_retoran extends AppCompatActivity {
         String[] txtRB = new String[rg.length];
         String[] nilaiRB = new String[rg.length];
         HashMap<String, String> nilaiTPM = new HashMap<>();
-        for(int i = 0; i<=rg.length; i++)
+        for(int i = 0; i<rg.length; i++)
         {
             if(rg[i].getCheckedRadioButtonId() != -1){
                 txtRB[i] = ((RadioButton)findViewById(rg[i].getCheckedRadioButtonId())).getText().toString();

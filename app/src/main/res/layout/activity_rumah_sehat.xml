@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="tiregdev.sipepikeling.rumah_sehat">
+    tools:context="tiregdev.sipepikeling.activity.RSActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -754,53 +754,6 @@
                 android:text="@string/sampah1"
                 android:textColor="@color/colorBlack" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/sampah1a"
-                android:textColor="@color/colorBlack" />
-
-            <RadioGroup
-                android:id="@+id/rg18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/sampah1a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sampah1a1" />
-
-                <RadioButton
-                    android:id="@+id/sampah1a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sampah1a2" />
-
-                <RadioButton
-                    android:id="@+id/sampah1a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sampah1a3" />
-
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/sampah2"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/sampah2a"
-                android:textColor="@color/colorBlack" />
-
             <RadioGroup
                 android:id="@+id/rg19"
                 android:layout_width="match_parent"
@@ -818,12 +771,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/sampah2a2" />
-
-                <RadioButton
-                    android:id="@+id/sampah2a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sampah2a3" />
 
             </RadioGroup>
 
