@@ -48,6 +48,7 @@
                     android:id="@+id/frmNamaTempat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu2_umum1"
                     android:inputType="text" />
 
@@ -62,6 +63,7 @@
                     android:id="@+id/frmNamaPengusaha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu2_umum2"
                     android:inputType="text" />
 
@@ -76,6 +78,7 @@
                     android:id="@+id/frmJmlKaryawan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu2_umum3"
                     android:inputType="text" />
 
@@ -90,6 +93,7 @@
                     android:id="@+id/frmJmlPenjamah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu2_umum4"
                     android:inputType="text" />
 
@@ -104,6 +108,7 @@
                     android:id="@+id/frmAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu2_umumAlamat"
                     android:inputType="text" />
 
@@ -118,6 +123,7 @@
                     android:id="@+id/frmNoIzin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu2_umum5"
                     android:inputType="text" />
 

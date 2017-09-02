@@ -63,6 +63,7 @@
                     android:id="@+id/namaPuskesmas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ketSAB_ketUmum1a"
                     android:inputType="text" />
 
@@ -77,6 +78,7 @@
                     android:id="@+id/kodeSarana"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ketSAB_ketUmum2"
                     android:inputType="text" />
 
@@ -90,6 +92,7 @@
                     android:id="@+id/pemilikSarana"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ketSAB_ketUmum3"
                     android:inputType="text" />
 
@@ -128,6 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/ketSAB_ketUmum6"
+                    android:textColor="@color/colorPrimary"
                     android:inputType="number" />
 
             </android.support.design.widget.TextInputLayout>
@@ -141,6 +145,7 @@
                     android:id="@+id/golongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ketSAB_ketUmum7"
                     android:inputType="text" />
 

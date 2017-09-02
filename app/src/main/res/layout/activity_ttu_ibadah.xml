@@ -48,6 +48,7 @@
                     android:id="@+id/namaTempat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu1_umum1"
                     android:inputType="text" />
 
@@ -62,6 +63,7 @@
                     android:id="@+id/namaPengurus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu1_umum2"
                     android:inputType="text" />
 
@@ -76,6 +78,7 @@
                     android:id="@+id/alamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu1_umum3"
                     android:inputType="text" />
 
@@ -90,6 +93,7 @@
                     android:id="@+id/jmlJamaah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu1_umum4"
                     android:inputType="text" />
 

@@ -11,8 +11,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.andexert.library.RippleView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import tiregdev.sipepikeling.R;
 import tiregdev.sipepikeling.jenis_tpm;
 import tiregdev.sipepikeling.jenis_ttu;
+import tiregdev.sipepikeling.pkl;
 import tiregdev.sipepikeling.utils.SessionString;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        Toast.makeText(this,"Selamat datang di aplikasi SIPP KELING",Toast.LENGTH_LONG).show();
         setInit();
         setAuthInstance();
         setDatabaseInstance();
@@ -57,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final RippleView rippleViewDAM = (RippleView) findViewById(R.id.dam);
+        final RippleView rippleViewDAM = (RippleView) findViewById(R.id.pkl);
         rippleViewDAM.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Intent w = new Intent(MainActivity.this, DAMActivity.class);
+                Intent w = new Intent(MainActivity.this, pkl.class);
                 startActivity(w);
             }
         });
@@ -83,10 +89,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(w);
             }
         });
-        final RippleView btnLogout = (RippleView) findViewById(R.id.logout);
-        btnLogout.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+
+        final RelativeLayout btnLogout = (RelativeLayout) findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(RippleView rippleView) {
+            public void onClick(View view) {
                 logOut();
             }
         });

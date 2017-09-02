@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
-                android:weightSum="1">
+                android:weightSum="2">
 
 
                 <com.andexert.library.RippleView
@@ -151,6 +151,27 @@
                         android:drawablePadding="10dp"
                         android:drawableTop="@drawable/kolam_renang"
                         android:text="@string/jenisTTU8"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/jenisTTU10"
+                    rv_centered="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    app:rv_color="@color/colorRipple"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/rumah_sakit"
+                        android:text="@string/jenisTTU10"
                         android:textColor="@color/colorPrimaryDark" />
 
                 </com.andexert.library.RippleView>

@@ -48,6 +48,7 @@
                     android:id="@+id/namaKK"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/namakk" />
 
             </android.support.design.widget.TextInputLayout>
@@ -61,6 +62,7 @@
                     android:id="@+id/jmlAnggota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:hint="@string/jumlahkk"
                     android:inputType="number" />
 
@@ -106,6 +108,7 @@
                         android:id="@+id/noRumah"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
                         android:hint="@string/nmrRmh"
                         android:inputType="number" />
 

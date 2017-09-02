@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">SI KELING</string>
+    <string name="app_name">SIPP KELING</string>
 
     <!--MODUL START-->
     <string name="rs">RS</string>
     <string name="sab">SAB</string>
-    <string name="dam">DAM</string>
+    <string name="dam">Depot Air Minum</string>
     <string name="ttu">TTU</string>
     <string name="tpm">TPM</string>
     <string name="pjb">PJB</string>
-    <string name="ppsd">PPSD</string>
+    <string name="pkl">PKL</string>
     <!--MODUL FINISH-->
 
     <string-array name="choice_array">
@@ -29,13 +29,12 @@
     <string name="RS_SPAL1">Tertutup</string>
     <string name="RS_SPAL2">Terbuka</string>
     <string name="ketSAB">2. SAB = Sumber Air Bersih</string>
-    <string name="ketDAM">3. DAM = Depot Air Minum</string>
     <string name="ketTTU">4. TTU = Tempat-tempat Umum</string>
     <string name="ketTPM">5. TPM = Tempat Pengelolaan Makan</string>
     <string name="ketPJB">6. PJB = Pemantauan Jentik Berkala</string>
     <string name="ketPJB3"><b>Pemantauan Jentik Berkala</b></string>
     <string name="ketPJB2">Apakah ada jentik?</string>
-    <string name="ketPPSD">7. Pendataan Sarana Sanitasi Dasar</string>
+    <string name="ketPKL">3. PKL = Pelayanan Kesehatan Lingkungan</string>
     <!--DESC. MODUL FINISH-->
 
     <!--RT START-->
@@ -51,6 +50,16 @@
         <item>RT 008</item>
         <item>RT 009</item>
         <item>RT 010</item>
+        <item>RT 011</item>
+        <item>RT 012</item>
+        <item>RT 013</item>
+        <item>RT 014</item>
+        <item>RT 015</item>
+        <item>RT 016</item>
+        <item>RT 017</item>
+        <item>RT 018</item>
+        <item>RT 019</item>
+        <item>RT 020</item>
     </string-array>
     <!--RT FINISH-->
 
@@ -65,6 +74,18 @@
         <item>RW 06</item>
         <item>RW 07</item>
         <item>RW 08</item>
+        <item>RW 09</item>
+        <item>RW 10</item>
+        <item>RW 11</item>
+        <item>RW 12</item>
+        <item>RW 13</item>
+        <item>RW 14</item>
+        <item>RW 15</item>
+        <item>RW 16</item>
+        <item>RW 17</item>
+        <item>RW 18</item>
+        <item>RW 19</item>
+        <item>RW 20</item>
     </string-array>
     <!--RW FINISH-->
 
@@ -98,7 +119,7 @@
     <string name="komponenRmh4a">a. Tidak ada</string>
     <string name="komponenRmh4b">b. Ada</string>
 
-    <string name="komponenRmh5"><b>5. Jendela kamar tidur</b></string>
+    <string name="komponenRmh5"><b>5. Jendela ruang keluarga</b></string>
     <string name="komponenRmh5a">a. Tidak ada</string>
     <string name="komponenRmh5b">b. Ada</string>
 
@@ -229,7 +250,7 @@
     <string name="SAB3_DiagKhusus10">10. Apakah dinding sumur tidak cukup rapat disemen sepanjang kedalaman 3m dibawah permukaan?</string>
     <string name="SAB3_DiagKhusus11">11. Apakah penutup sumur tidak bersih/ tidak ada?</string>
 
-    <string name="jenisSAB4">Perpiaan/PDAM</string>
+    <string name="jenisSAB4">Perpipaan/PDAM</string>
     <string name="jenisSAB5">Mata Air</string>
     <string name="YA">YA</string>
     <string name="TIDAK">TIDAK</string>
@@ -604,11 +625,15 @@
     <string name="jenisTTU2">Rumah Sakit</string>
     <string name="jenisTTU3">Industri Rumahan</string>
     <string name="jenisTTU4">Pasar</string>
-    <string name="jenisTTU5">Sekolah Dasar</string>
+    <string name="jenisTTU5">Sekolah</string>
     <string name="jenisTTU6">Pesantren</string>
     <string name="jenisTTU7">Rumah Makan dan Restaurant</string>
     <string name="jenisTTU8">Kolam Renang</string>
     <string name="jenisTTU9">Pemerikasaan Jasa Boga</string>
+    <string name="jenisTTU10">FasKes</string>
+
+    <string name="logout">Sudah selesai mengisi form?</string>
+    <string name="logout2"><u>LOGOUT</u></string>
     <!--TTU FINISH-->
 
     <!--FORM START-->
@@ -622,7 +647,21 @@
     isi semua field ini sesuai prosedur yang telah diurutkan</string>
     <string name="formTTU_tpm">Berikut adalah form untuk pemeriksaan kelayakan hygiene sanitasi <b>Rumah Makan dan Restoran</b>,
         silahkan Anda isi semua field ini sesuai prosedur yang telah diurutkan</string>
+    <string name="formPKL">Berikut adalah form untuk <b>pelayanan kesehatan lingkungan</b>,
+        silahkan Anda isi semua field ini sesuai prosedur yang telah diurutkan</string>
     <!--FORM FINISH-->
+
+    <string name="pkl_1">Nama</string>
+    <string name="pkl_2">Umur</string>
+    <string name="pkl_3">Jenis Kelamin</string>
+    <string name="lk">Laki-laki</string>
+    <string name="cw">Perempuan</string>
+    <string name="pkl_4">Alamat</string>
+    <string name="pkl_5">Kasus</string>
+    <string name="pkl_6">Pelayanan KesLing</string>
+    <string name="pkl_7">Dalam Gedung</string>
+    <string name="pkl_8">Luar Gedung</string>
+    <string name="pkl_9">Nama Tempat</string>
 
     <string name="uname">Username</string>
     <string name="pass">Password</string>

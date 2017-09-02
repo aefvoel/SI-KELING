@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="tiregdev.sipepikeling.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/logout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/logout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/logout1"
+            android:textSize="16sp"
+            android:text="@string/logout2"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -88,10 +120,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="2">
 
                 <com.andexert.library.RippleView
-                    android:id="@+id/dam"
+                    android:id="@+id/pkl"
                     rv_centered="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -106,8 +138,8 @@
                         android:layout_centerHorizontal="true"
                         android:background="@null"
                         android:drawablePadding="10dp"
-                        android:drawableTop="@drawable/dam"
-                        android:text="@string/dam"
+                        android:drawableTop="@drawable/pesantren"
+                        android:text="@string/pkl"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp" />
 
@@ -131,28 +163,6 @@
                         android:drawablePadding="10dp"
                         android:drawableTop="@drawable/ttu"
                         android:text="@string/ttu"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="18sp" />
-
-                </com.andexert.library.RippleView>
-                <com.andexert.library.RippleView
-                    android:id="@+id/logout"
-                    rv_centered="true"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:rv_centered="true"
-                    app:rv_color="@color/colorRipple"
-                    app:rv_rippleDuration="150">
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:background="@null"
-                        android:drawablePadding="10dp"
-                        android:drawableTop="@drawable/common_google_signin_btn_icon_dark_normal"
-                        android:text="LogOut"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp" />
 
@@ -191,7 +201,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ketDAM" />
+                    android:text="@string/ketPKL" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -203,4 +213,4 @@
 
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</RelativeLayout>

@@ -6,8 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.andexert.library.RippleView;
+
+import tiregdev.sipepikeling.activity.DAMActivity;
+import tiregdev.sipepikeling.activity.MainActivity;
 
 public class jenis_tpm extends AppCompatActivity {
 
@@ -19,11 +23,28 @@ public class jenis_tpm extends AppCompatActivity {
         setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        final RippleView rippleViewJ9 = (RippleView) findViewById(R.id.jenisTTU9);
+        rippleViewJ9.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya",Toast.LENGTH_LONG).show();
+            }
+        });
+
         final RippleView rippleViewJ7 = (RippleView) findViewById(R.id.jenisTTU7);
         rippleViewJ7.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
                 Intent w = new Intent(jenis_tpm.this, tpm_retoran.class);
+                startActivity(w);
+            }
+        });
+
+        final RippleView rippleViewDAM = (RippleView) findViewById(R.id.dam);
+        rippleViewDAM.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent w = new Intent(jenis_tpm.this, DAMActivity.class);
                 startActivity(w);
             }
         });

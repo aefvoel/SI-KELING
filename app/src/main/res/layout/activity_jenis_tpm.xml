@@ -60,4 +60,25 @@
 
     </com.andexert.library.RippleView>
 
+    <com.andexert.library.RippleView
+        android:id="@+id/dam"
+        rv_centered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:rv_centered="true"
+        app:rv_color="@color/colorRipple"
+        app:rv_rippleDuration="150">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/dam"
+            android:text="@string/dam"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </com.andexert.library.RippleView>
+
 </LinearLayout>
