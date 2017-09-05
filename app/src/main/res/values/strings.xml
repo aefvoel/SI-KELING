@@ -30,7 +30,7 @@
     <string name="RS_SPAL2">Terbuka</string>
     <string name="ketSAB">2. SAB = Sumber Air Bersih</string>
     <string name="ketTTU">4. TTU = Tempat-tempat Umum</string>
-    <string name="ketTPM">5. TPM = Tempat Pengelolaan Makan</string>
+    <string name="ketTPM">2. TPM = Tempat Pengelolaan Makan</string>
     <string name="ketPJB">6. PJB = Pemantauan Jentik Berkala</string>
     <string name="ketPJB3"><b>Pemantauan Jentik Berkala</b></string>
     <string name="ketPJB2">Apakah ada jentik?</string>

@@ -82,14 +82,16 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/rblk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/lk"/>
+                    android:text="@string/lk" />
 
                 <RadioButton
+                    android:id="@+id/rbpr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cw"/>
+                    android:text="@string/cw" />
 
             </RadioGroup>
 
@@ -136,14 +138,16 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/jenis1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pkl_7"/>
+                    android:text="@string/pkl_7" />
 
                 <RadioButton
+                    android:id="@+id/jenis2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pkl_8"/>
+                    android:text="@string/pkl_8" />
 
             </RadioGroup>
 
