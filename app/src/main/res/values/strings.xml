@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SIPP KELING</string>
+    <string name="app_name">SIPP KLING</string>
 
     <!--MODUL START-->
     <string name="rs">RS</string>
@@ -22,7 +22,7 @@
     <string name="RS_Jamban"><b>Jamban Sehat</b></string>
     <string name="RS_JambanKet">Menggunakan jamban?</string>
     <string name="RS_Jamban1">Septik Tank</string>
-    <string name="RS_Jamban2">Koya/Empang</string>
+    <string name="RS_Jamban2">Koya / Empang</string>
     <string name="RS_Jamban3">Kali</string>
     <string name="RS_Jamban4">Helikopter</string>
     <string name="RS_SPAL"><b>SPAL</b></string>
@@ -90,6 +90,7 @@
     <!--RW FINISH-->
 
     <string name="namakk">Nama Kepala Keluarga</string>
+    <string name="alamatkk">Alamat</string>
     <string name="jumlahkk">Jumlah Anggota Keluarga (sesuai kk)</string>
     <string name="rt">RT</string>
     <string name="rw">RW</string>

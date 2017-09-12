@@ -78,6 +78,7 @@
                     android:id="@+id/alamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="false"
                     android:textColor="@color/colorPrimary"
                     android:hint="@string/ttu1_umum3"
                     android:inputType="text" />

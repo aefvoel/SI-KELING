@@ -1,5 +1,6 @@
 package tiregdev.sipepikeling.activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -23,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import tiregdev.sipepikeling.R;
+import tiregdev.sipepikeling.utils.ProgressDialogUtil;
 import tiregdev.sipepikeling.utils.SessionString;
 
 public class LoginActivity extends AppCompatActivity {
@@ -34,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
+    private ProgressDialogUtil pDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         frmEmail = (EditText) findViewById(R.id.email);
         frmPass = (EditText) findViewById(R.id.pass);
         btnLogin = (Button) findViewById(R.id.btnLogin);
+        pDialog = new ProgressDialogUtil(this, ProgressDialog.STYLE_SPINNER, true);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginPetugas(String txtEmail, String txtPass) {
+        pDialog.show();
         mFirebaseAuth.signInWithEmailAndPassword(txtEmail, txtPass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -80,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(getBaseContext(), "Email tidak valid!", Toast.LENGTH_SHORT).show();
                             Log.e("ERROR", task.getException().getMessage());
                         }
+                        pDialog.dismiss();
                     }
                 }
         );
@@ -108,6 +114,7 @@ public class LoginActivity extends AppCompatActivity {
                 }else{
                     goToMainActivity();
                 }
+                pDialog.dismiss();
             }
 
             @Override

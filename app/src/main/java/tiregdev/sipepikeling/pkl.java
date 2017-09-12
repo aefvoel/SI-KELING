@@ -16,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -45,7 +53,7 @@ public class pkl extends AppCompatActivity {
 
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
-
+    private static final int REQUEST_CODE_AUTOCOMPLETE = 1;
     EditText nama, umur, alamat, kasus, namaTempat;
     RadioGroup jenisKelamin, jenis;
     Button btnSend;
@@ -64,7 +72,6 @@ public class pkl extends AppCompatActivity {
         setSharedPreferences();
         setDatabaseInstance();
         setAuthInstance();
-        setAlamat();
     }
 
     private void setInit(){
@@ -84,49 +91,78 @@ public class pkl extends AppCompatActivity {
                 onSubmit();
             }
         });
+        alamat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAutocompleteActivity();
+            }
+        });
     }
 
-    private void setAlamat() {
-        if ( Build.VERSION.SDK_INT >= 23 &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return  ;
+    private void openAutocompleteActivity() {
+        try {
+            Intent intent = new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
+                    .build(this);
+            startActivityForResult(intent, REQUEST_CODE_AUTOCOMPLETE);
+        } catch (GooglePlayServicesRepairableException e) {
+            GoogleApiAvailability.getInstance().getErrorDialog(this, e.getConnectionStatusCode(),
+                    0 /* requestCode */).show();
+        } catch (GooglePlayServicesNotAvailableException e) {
+            String message = "Google Play Services is not available: " +
+                    GoogleApiAvailability.getInstance().getErrorString(e.errorCode);
+
+            Log.e("ERROR", message);
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         }
-        LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-        String provider = locationManager.getBestProvider(new Criteria(), true);
-        Location locations = locationManager.getLastKnownLocation(provider);
-        List<String> providerList = locationManager.getAllProviders();
-        if(null!=locations && null!=providerList && providerList.size()>0){
-            lng = locations.getLongitude();
-            lat = locations.getLatitude();
-            Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
-            try {
-                List<Address> listAddresses = geocoder.getFromLocation(lat, lng, 1);
-                if(null!=listAddresses&&listAddresses.size()>0){
-                    //txtAlamat = listAddresses.get(0).getAddressLine(0);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE_AUTOCOMPLETE) {
+            if (resultCode == RESULT_OK) {
+                Place place = PlaceAutocomplete.getPlace(this, data);
+                Log.i("TAG", "Place Selected: " + place.getName());
+                String addressPlace = String.valueOf(place.getAddress());
+                alamat.setText(addressPlace.trim());
+                LatLng latLng = place.getLatLng();
+                lat = latLng.latitude;
+                lng = latLng.longitude;
+            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+                Status status = PlaceAutocomplete.getStatus(this, data);
+                Log.e("TAG", "Error: Status = " + status.toString());
             }
         }
     }
     private void onSubmit(){
-        String txtNama = nama.getText().toString().trim();
-        String txtUmur = umur.getText().toString().trim();
-        String txtAlamat = alamat.getText().toString().trim();
-        String txtKasus = kasus.getText().toString().trim();
-        String txtNamaTempat = namaTempat.getText().toString().trim();
-        String txtJenisKelamin = ((RadioButton)findViewById(jenisKelamin.getCheckedRadioButtonId())).getText().toString();
-        String txtJenis = ((RadioButton)findViewById(jenis.getCheckedRadioButtonId())).getText().toString();
-        String idPetugas = pref.getString(SessionString.EXTRA_KEY_ID_USER, null);
-        String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
-        String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
 
-        PKL setPKL = new PKL(txtNama, txtUmur, txtJenisKelamin, txtAlamat, txtKasus, txtJenis, txtNamaTempat, idPetugas, koordinat, waktu);
-        mDatabase.child("pkl").push().setValue(setPKL);
-        Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(getBaseContext(), MainActivity.class));
-        finish();
+        if(jenisKelamin.getCheckedRadioButtonId() != -1 && jenis.getCheckedRadioButtonId() != -1
+                && !nama.getText().toString().trim().equals("") && !umur.getText().toString().trim().equals("")
+                && !alamat.getText().toString().trim().equals("") && !kasus.getText().toString().trim().equals("")
+                && !namaTempat.getText().toString().trim().equals("")){
+
+            String txtNama = nama.getText().toString().trim();
+            String txtUmur = umur.getText().toString().trim();
+            String txtAlamat = alamat.getText().toString().trim();
+            String txtKasus = kasus.getText().toString().trim();
+            String txtNamaTempat = namaTempat.getText().toString().trim();
+            String txtJenisKelamin = ((RadioButton)findViewById(jenisKelamin.getCheckedRadioButtonId())).getText().toString();
+            String txtJenis = ((RadioButton)findViewById(jenis.getCheckedRadioButtonId())).getText().toString();
+            String idPetugas = pref.getString(SessionString.EXTRA_KEY_ID_USER, null);
+            String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
+            String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
+
+            PKL setPKL = new PKL(txtNama, txtUmur, txtJenisKelamin, txtAlamat, txtKasus, txtJenis, txtNamaTempat, idPetugas, koordinat, waktu);
+            mDatabase.child("pkl").push().setValue(setPKL);
+            Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getBaseContext(), MainActivity.class));
+            finish();
+
+        }else{
+            Toast.makeText(this, "Error harap check semua opsi!", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     @Override

@@ -1,6 +1,7 @@
 package tiregdev.sipepikeling;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -15,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +25,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -114,7 +123,7 @@ public class tpm_retoran extends AppCompatActivity {
     private double lat;
     private double lng;
     SimpleDateFormat sdf;
-
+    private static final int REQUEST_CODE_AUTOCOMPLETE = 1;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private DatabaseReference mDatabase;
@@ -134,7 +143,6 @@ public class tpm_retoran extends AppCompatActivity {
         setSharedPreferences();
         setAuthInstance();
         setDatabaseInstance();
-        setAlamat();
     }
 
     private void setInit(){
@@ -169,74 +177,98 @@ public class tpm_retoran extends AppCompatActivity {
                 onSubmit();
             }
         });
-    }
-    private void setAlamat() {
-        if ( Build.VERSION.SDK_INT >= 23 &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return  ;
-        }
-        LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-        String provider = locationManager.getBestProvider(new Criteria(), true);
-        Location locations = locationManager.getLastKnownLocation(provider);
-        List<String> providerList = locationManager.getAllProviders();
-        if(null!=locations && null!=providerList && providerList.size()>0){
-            lng = locations.getLongitude();
-            lat = locations.getLatitude();
-            Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
-            try {
-                List<Address> listAddresses = geocoder.getFromLocation(lat, lng, 1);
-                if(null!=listAddresses&&listAddresses.size()>0){
-//                    txtAlamat = listAddresses.get(0).getAddressLine(0);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+        frmAlamat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAutocompleteActivity();
             }
+        });
+    }
+    private void openAutocompleteActivity() {
+        try {
+            Intent intent = new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
+                    .build(this);
+            startActivityForResult(intent, REQUEST_CODE_AUTOCOMPLETE);
+        } catch (GooglePlayServicesRepairableException e) {
+            GoogleApiAvailability.getInstance().getErrorDialog(this, e.getConnectionStatusCode(),
+                    0 /* requestCode */).show();
+        } catch (GooglePlayServicesNotAvailableException e) {
+            String message = "Google Play Services is not available: " +
+                    GoogleApiAvailability.getInstance().getErrorString(e.errorCode);
 
+            Log.e("ERROR", message);
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         }
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE_AUTOCOMPLETE) {
+            if (resultCode == RESULT_OK) {
+                Place place = PlaceAutocomplete.getPlace(this, data);
+                Log.i("TAG", "Place Selected: " + place.getName());
+                String addressPlace = String.valueOf(place.getAddress());
+                frmAlamat.setText(addressPlace.trim());
+                LatLng latLng = place.getLatLng();
+                lat = latLng.latitude;
+                lng = latLng.longitude;
+            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+                Status status = PlaceAutocomplete.getStatus(this, data);
+                Log.e("TAG", "Error: Status = " + status.toString());
+            }
+        }
     }
     private void onSubmit(){
-        String txtNamaTempat = frmNamaTempat.getText().toString().trim();
-        String txtNamaPengusaha = frmNamaPengusaha.getText().toString().trim();
-        String txtJmlKaryawan = frmJmlKaryawan.getText().toString().trim();
-        String txtJmlPenjamah = frmJmlPenjamah.getText().toString().trim();
-        String txtAlamat = frmAlamat.getText().toString().trim();
-        String txtNoIzinUsaha = frmNoIzinUsaha.getText().toString().trim();
-        String idPetugas = pref.getString(SessionString.EXTRA_KEY_ID_USER, null);
-        double totalNilai = 0;
-        boolean hasValue = true;
-        String status;
-        String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
-        String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
-        String[] txtRB = new String[rg.length];
-        String[] nilaiRB = new String[rg.length];
-        HashMap<String, String> nilaiTPM = new HashMap<>();
-        for(int i = 0; i<rg.length; i++)
-        {
-            if(rg[i].getCheckedRadioButtonId() != -1){
-                txtRB[i] = ((RadioButton)findViewById(rg[i].getCheckedRadioButtonId())).getText().toString();
-                if(txtRB[i].equals("YA")){
-                    nilaiRB[i] = String.valueOf(nTPM[i] * bTPM[i]);
-                }else {
-                    nilaiRB[i] = "0";
+        if(!frmNamaTempat.getText().toString().trim().equals("") && !frmNamaPengusaha.getText().toString().trim().equals("")
+                && !frmJmlKaryawan.getText().toString().trim().equals("") && !frmJmlPenjamah.getText().toString().trim().equals("")
+                && !frmAlamat.getText().toString().trim().equals("") && !frmNoIzinUsaha.getText().toString().trim().equals("")){
+            String txtNamaTempat = frmNamaTempat.getText().toString().trim();
+            String txtNamaPengusaha = frmNamaPengusaha.getText().toString().trim();
+            String txtJmlKaryawan = frmJmlKaryawan.getText().toString().trim();
+            String txtJmlPenjamah = frmJmlPenjamah.getText().toString().trim();
+            String txtAlamat = frmAlamat.getText().toString().trim();
+            String txtNoIzinUsaha = frmNoIzinUsaha.getText().toString().trim();
+            String idPetugas = pref.getString(SessionString.EXTRA_KEY_ID_USER, null);
+            double totalNilai = 0;
+            boolean hasValue = true;
+            String status;
+            String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
+            String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
+            String[] txtRB = new String[rg.length];
+            String[] nilaiRB = new String[rg.length];
+            HashMap<String, String> nilaiTPM = new HashMap<>();
+            for(int i = 0; i<rg.length; i++)
+            {
+                if(rg[i].getCheckedRadioButtonId() != -1){
+                    txtRB[i] = ((RadioButton)findViewById(rg[i].getCheckedRadioButtonId())).getText().toString();
+                    if(txtRB[i].equals("YA")){
+                        nilaiRB[i] = String.valueOf(nTPM[i] * bTPM[i]);
+                    }else {
+                        nilaiRB[i] = "0";
+                    }
+                    nilaiTPM.put("nilai_" + i , nilaiRB[i]);
+                    totalNilai = totalNilai + Double.valueOf(nilaiRB[i]);
+                }else{
+                    hasValue = false;
                 }
-                nilaiTPM.put("nilai_" + i , nilaiRB[i]);
-                totalNilai = totalNilai + Double.valueOf(nilaiRB[i]);
+            }
+            if(hasValue){
+                if(totalNilai >= 700){
+                    status = "Laik Hygiene Sanitasi";
+                }else {
+                    status = "Tidak Laik Hygiene Sanitasi";
+                }
+                submitTPM(txtNamaTempat, txtNamaPengusaha, txtJmlKaryawan, txtJmlPenjamah, txtNoIzinUsaha, waktu, txtAlamat, koordinat, idPetugas, totalNilai, status, nilaiTPM);
             }else{
-                hasValue = false;
+                Toast.makeText(this, "Error harap check semua opsi!", Toast.LENGTH_SHORT).show();
             }
         }
-        if(hasValue){
-            if(totalNilai >= 700){
-                status = "Laik Hygiene Sanitasi";
-            }else {
-                status = "Tidak Laik Hygiene Sanitasi";
-            }
-            submitTPM(txtNamaTempat, txtNamaPengusaha, txtJmlKaryawan, txtJmlPenjamah, txtNoIzinUsaha, waktu, txtAlamat, koordinat, idPetugas, totalNilai, status, nilaiTPM);
-        }else{
-            Toast.makeText(this, "Error harap check semua opsi!", Toast.LENGTH_SHORT).show();
+        else{
+            Toast.makeText(this, "Error semua harap diisi!", Toast.LENGTH_SHORT).show();
         }
+
 
     }
     private void submitTPM(String txtNamaTempat, String txtNamaPengusaha, String txtJmlKaryawan, String txtJmlPenjamah,

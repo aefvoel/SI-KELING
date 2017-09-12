@@ -60,7 +60,7 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
         <activity
             android:name=".jenis_ttu"
-            android:label="Jenis TPU" />
+            android:label="Jenis TTU" />
         <activity
             android:name=".ttu_ibadah"
             android:configChanges="orientation|keyboardHidden|screenSize"

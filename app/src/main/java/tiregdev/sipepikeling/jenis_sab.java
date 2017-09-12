@@ -55,7 +55,6 @@ public class jenis_sab extends AppCompatActivity {
         setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setInit();
-        setAlamat();
         setSharedPreferences();
         setAuthInstance();
         setDatabaseInstance();
@@ -71,6 +70,8 @@ public class jenis_sab extends AppCompatActivity {
                 Intent w = new Intent(jenis_sab.this, sab_pompa.class);
                 w.putExtra("idKK", getIntent().getExtras().getString("idKK"));
                 w.putExtra("idSAB", getIntent().getExtras().getString("idSAB"));
+                w.putExtra("koordinat", getIntent().getExtras().getString("koordinat"));
+                w.putExtra("alamat", getIntent().getExtras().getString("alamat"));
                 w.putExtra("kategori", "A");
                 startActivity(w);
             }
@@ -83,6 +84,8 @@ public class jenis_sab extends AppCompatActivity {
                 Intent w = new Intent(jenis_sab.this, sab_sumur_gali.class);
                 w.putExtra("idKK", getIntent().getExtras().getString("idKK"));
                 w.putExtra("idSAB", getIntent().getExtras().getString("idSAB"));
+                w.putExtra("koordinat", getIntent().getExtras().getString("koordinat"));
+                w.putExtra("alamat", getIntent().getExtras().getString("alamat"));
                 w.putExtra("kategori", "B");
                 startActivity(w);
             }
@@ -95,6 +98,8 @@ public class jenis_sab extends AppCompatActivity {
                 Intent w = new Intent(jenis_sab.this, sab_sumur_gali_plus.class);
                 w.putExtra("idKK", getIntent().getExtras().getString("idKK"));
                 w.putExtra("idSAB", getIntent().getExtras().getString("idSAB"));
+                w.putExtra("koordinat", getIntent().getExtras().getString("koordinat"));
+                w.putExtra("alamat", getIntent().getExtras().getString("alamat"));
                 w.putExtra("kategori", "C");
                 startActivity(w);
             }
@@ -121,11 +126,9 @@ public class jenis_sab extends AppCompatActivity {
     private void onSubmit(){
         String kategori = txtKategori;
         String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
-        String alamat = txtAlamat;
-        String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
         String idPetugas = pref.getString(SessionString.EXTRA_KEY_ID_USER, null);
         String idKK = getIntent().getExtras().getString("idKK");
-        SAB setSAB = new SAB(kategori, waktu, alamat, koordinat, idPetugas, idKK);
+        SAB setSAB = new SAB(kategori, waktu, getIntent().getExtras().getString("alamat"), getIntent().getExtras().getString("koordinat"), idPetugas, idKK);
         mDatabase.child("sab").child(getIntent().getExtras().getString("idSAB")).child("data").setValue(setSAB);
         Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getBaseContext(), MainActivity.class));
@@ -142,30 +145,7 @@ public class jenis_sab extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    private void setAlamat() {
-        if ( Build.VERSION.SDK_INT >= 23 &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return  ;
-        }
-        LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-        String provider = locationManager.getBestProvider(new Criteria(), true);
-        Location locations = locationManager.getLastKnownLocation(provider);
-        List<String> providerList = locationManager.getAllProviders();
-        if(null!=locations && null!=providerList && providerList.size()>0){
-            lng = locations.getLongitude();
-            lat = locations.getLatitude();
-            Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
-            try {
-                List<Address> listAddresses = geocoder.getFromLocation(lat, lng, 1);
-                if(null!=listAddresses&&listAddresses.size()>0){
-                    txtAlamat = listAddresses.get(0).getAddressLine(0);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+
     private void setSharedPreferences() {
         pref = getApplicationContext().getSharedPreferences(SessionString.EXTRA_DATABASE_SESSION, MODE_PRIVATE);
         editor = pref.edit();

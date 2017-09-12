@@ -105,6 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:focusable="false"
                     android:textColor="@color/colorPrimary"
                     android:hint="@string/pkl_4" />
 
