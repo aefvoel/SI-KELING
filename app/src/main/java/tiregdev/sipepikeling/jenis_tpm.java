@@ -12,6 +12,7 @@ import com.andexert.library.RippleView;
 
 import tiregdev.sipepikeling.activity.DAMActivity;
 import tiregdev.sipepikeling.activity.MainActivity;
+import tiregdev.sipepikeling.activity.tpm_jasaboga;
 
 public class jenis_tpm extends AppCompatActivity {
 
@@ -27,7 +28,8 @@ public class jenis_tpm extends AppCompatActivity {
         rippleViewJ9.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya",Toast.LENGTH_LONG).show();
+                Intent w = new Intent(jenis_tpm.this, tpm_jasaboga.class);
+                startActivity(w);
             }
         });
 

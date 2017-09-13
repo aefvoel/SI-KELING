@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import com.andexert.library.RippleView;
 
+import tiregdev.sipepikeling.activity.ttu_pasar;
+
 public class jenis_ttu extends AppCompatActivity {
 
     @Override
@@ -33,7 +35,8 @@ public class jenis_ttu extends AppCompatActivity {
         rippleViewJ2.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya",Toast.LENGTH_LONG).show();
+                Intent w = new Intent(jenis_ttu.this, ttu_pasar.class);
+                startActivity(w);
             }
         });
 

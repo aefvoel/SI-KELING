@@ -75,9 +75,19 @@
         <activity
             android:name=".jenis_tpm"
             android:label="Jenis TPM" />
-        <activity android:name=".pkl"
+        <activity
+            android:name=".pkl"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Pelayanan Kesling"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.ttu_pasar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Inspeksi Pasar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity android:name=".activity.tpm_jasaboga"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Pengawasan Jasa Boga"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
     </application>
 
