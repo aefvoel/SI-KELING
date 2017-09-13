@@ -9,17 +9,6 @@ public class RS {
     private String idKK;
     private String koordinat;
     private String waktu;
-
-    //    tabel kk
-
-
-//    tabel tempat
-//    private String kecamatan;
-//    private String kelurahan;
-//    private String kota;
-//    private String privinsi;
-//    private String rt;
-//    private String rw;
     private String idPetugas;
     private int totalNilai;
     private String status;

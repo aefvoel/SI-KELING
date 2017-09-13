@@ -250,14 +250,15 @@ public class RSActivity extends AppCompatActivity {
                           String idSAB, String txtRT, String txtRW, HashMap<String, String> nilaiRS){
         RS setRS = new RS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW);
 
-        String pushDAM = mDatabase.child("rs").push().getKey();
-        mDatabase.child("rs").child(pushDAM).child("data").setValue(setRS);
-        mDatabase.child("rs").child(pushDAM).child("nilai").setValue(nilaiRS);
+        String pushRS = mDatabase.child("rs").push().getKey();
+        mDatabase.child("rs").child(pushRS).child("data").setValue(setRS);
+        mDatabase.child("rs").child(pushRS).child("nilai").setValue(nilaiRS);
 
         Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getBaseContext(), jenis_sab.class);
         intent.putExtra("idKK", pushKK);
         intent.putExtra("idSAB", idSAB);
+        intent.putExtra("idRS", pushRS);
         intent.putExtra("koordinat", koordinat);
         intent.putExtra("alamat", frmAlamat.getText().toString().trim());
         startActivity(intent);
