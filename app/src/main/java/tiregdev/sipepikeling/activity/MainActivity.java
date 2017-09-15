@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        Toast.makeText(this,"Selamat datang di aplikasi SIPP KELING",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Selamat datang di aplikasi SIPP KLING",Toast.LENGTH_LONG).show();
         setInit();
         setAuthInstance();
         setDatabaseInstance();

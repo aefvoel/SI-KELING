@@ -10,7 +10,12 @@ import android.widget.Toast;
 
 import com.andexert.library.RippleView;
 
+import tiregdev.sipepikeling.activity.jenis_faskes;
+import tiregdev.sipepikeling.activity.ttu_hotel;
+import tiregdev.sipepikeling.activity.ttu_hotel_melati;
+import tiregdev.sipepikeling.activity.ttu_kolam;
 import tiregdev.sipepikeling.activity.ttu_pasar;
+import tiregdev.sipepikeling.activity.ttu_sekolah;
 
 public class jenis_ttu extends AppCompatActivity {
 
@@ -44,7 +49,8 @@ public class jenis_ttu extends AppCompatActivity {
         rippleViewJ3.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya",Toast.LENGTH_LONG).show();
+                Intent w = new Intent(jenis_ttu.this, ttu_sekolah.class);
+                startActivity(w);
             }
         });
 
@@ -52,7 +58,8 @@ public class jenis_ttu extends AppCompatActivity {
         rippleViewJ4.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya",Toast.LENGTH_LONG).show();
+                Intent w = new Intent(jenis_ttu.this, ttu_pesantren.class);
+                startActivity(w);
             }
         });
 
@@ -60,7 +67,8 @@ public class jenis_ttu extends AppCompatActivity {
         rippleViewJ5.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya", Toast.LENGTH_LONG).show();
+                Intent w = new Intent(jenis_ttu.this, ttu_kolam.class);
+                startActivity(w);
             }
         });
 
@@ -68,7 +76,26 @@ public class jenis_ttu extends AppCompatActivity {
         rippleViewJ6.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Toast.makeText(getBaseContext(),"Segera hadir pada versi berikutnya",Toast.LENGTH_LONG).show();
+                Intent w = new Intent(jenis_ttu.this, jenis_faskes.class);
+                startActivity(w);
+            }
+        });
+
+        final RippleView rippleViewH1 = (RippleView) findViewById(R.id.hotel);
+        rippleViewH1.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent w = new Intent(jenis_ttu.this, ttu_hotel.class);
+                startActivity(w);
+            }
+        });
+
+        final RippleView rippleViewH2 = (RippleView) findViewById(R.id.hotelMelati);
+        rippleViewH2.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent w = new Intent(jenis_ttu.this, ttu_hotel_melati.class);
+                startActivity(w);
             }
         });
 

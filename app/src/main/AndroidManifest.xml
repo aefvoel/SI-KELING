@@ -85,9 +85,42 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Inspeksi Pasar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
-        <activity android:name=".activity.tpm_jasaboga"
+        <activity
+            android:name=".activity.tpm_jasaboga"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Pengawasan Jasa Boga"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.ttu_sekolah"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Penilaian Kesling Sekolah"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.jenis_faskes"
+            android:label="Jenis Faskes" />
+        <activity android:name=".activity.ttu_hotel"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="IKL Hotel"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+        <activity android:name=".activity.ttu_hotel_melati"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="IKL Hotel Melati"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+        <activity android:name=".activity.ttu_kolam"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Check List Kolam Renang"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+        <activity android:name=".ttu_pesantren"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Form Pemeriksaan Pesantren"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+        <activity android:name=".activity.faskes_puskes"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Check List Puskesmas"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
+        <activity android:name=".activity.faskes_rumah_sakit"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Check List Kolam RS"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
     </application>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="tiregdev.sipepikeling.activity.tpm_jasaboga">
+    tools:context="tiregdev.sipepikeling.ttu_pesantren">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/formJasaBoga"
+                android:text="@string/formPesantren"
                 android:textColor="@color/colorBlack"
                 android:textSize="16sp" />
 
@@ -40,103 +40,265 @@
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_namaTempat"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <EditText
                     android:id="@+id/namaTempat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/jb_1"
-                    android:inputType="text" />
+                    android:hint="@string/PS_1"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_namaAlamat"
-                android:layout_marginTop="10dp"
+                android:id="@+id/input_Alamat"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <EditText
-                    android:id="@+id/namaAlamat"
+                    android:id="@+id/alamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/jb_2"
-                    android:inputType="text" />
+                    android:hint="@string/PS_2"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_tlp"
-                android:layout_marginTop="10dp"
+                android:id="@+id/input_namaPengelola"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <EditText
-                    android:id="@+id/tlp"
+                    android:id="@+id/namaPengelola"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/jb_3"
-                    android:inputType="text" />
+                    android:hint="@string/PS_3"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_namaPengusaha"
-                android:layout_marginTop="10dp"
+                android:id="@+id/input_jumlahSantri"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <EditText
-                    android:id="@+id/namaPengusaha"
+                    android:id="@+id/jumlahSantri"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/jb_4"
-                    android:inputType="text" />
+                    android:hint="@string/PS_4"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#b7b7b7" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:text="@string/PS_A"
                 android:textStyle="bold"
-                android:text="@string/jb_A"
                 android:textColor="@color/colorBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_A1"
+                android:text="@string/PS_A1"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_A1a"
+                android:id="@+id/ps1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_A1a"/>
+                android:text="@string/PS_A1a"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_A2"
+                android:textStyle="bold"
+                android:text="@string/PS_A2"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_A2a"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_A3"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_A2a"
+                android:id="@+id/ps3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_A2a"/>
+                android:text="@string/PS_A3a"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#b7b7b7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/PS_B"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_B4"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B4a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B4b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_B5"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B5a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B5b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_B6"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B6a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B6b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_B7"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B7a"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_B8"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B8a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B8b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PS_B9"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B9a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B9b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="@string/PS_B10"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_B10a"/>
 
             <View
                 android:layout_width="match_parent"
@@ -149,120 +311,64 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
-                android:text="@string/jb_B"
+                android:text="@string/PS_C"
                 android:textColor="@color/colorBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_B1"
                 android:textStyle="bold"
+                android:text="@string/PS_C11"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B1a"
+                android:id="@+id/ps16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B1a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_B2"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B2a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_B2a"/>
+                android:text="@string/PS_C11a"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:text="@string/jb_B3"
+                android:text="@string/PS_C12"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B3a"
+                android:id="@+id/ps17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B3a"/>
+                android:text="@string/PS_C12a"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_B4"
+                android:text="@string/PS_C13"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B4a"
+                android:id="@+id/ps18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B4a"/>
+                android:text="@string/PS_C13a"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_B5"
+                android:text="@string/PS_C14"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B5a"
+                android:id="@+id/ps19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B5a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_B6"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B6a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_B6a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_B7"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B7a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_B7a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_B8"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B8a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_B8a"/>
+                android:text="@string/PS_C14a"/>
 
             <View
                 android:layout_width="match_parent"
@@ -275,232 +381,148 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
-                android:text="@string/jb_C"
+                android:text="@string/PS_D"
                 android:textColor="@color/colorBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_C1"
                 android:textStyle="bold"
+                android:text="@string/PS_D15"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C1a"
+                android:id="@+id/ps20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C1a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C2"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_D15a"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C2a"
+                android:id="@+id/ps21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C2a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C3"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_D15b"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C3a"
+                android:id="@+id/ps22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C3a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C4"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C4a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C4a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C5"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C5a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C5a"/>
+                android:text="@string/PS_D15c"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:text="@string/jb_C6"
+                android:text="@string/PS_D16"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C6a"
+                android:id="@+id/ps23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C6a"/>
+                android:text="@string/PS_D16a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16b"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16c"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16d"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16e"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16f"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16g"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D16h"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_C7"
+                android:text="@string/PS_D17"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C7a"
+                android:id="@+id/ps31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C7a"/>
+                android:text="@string/PS_D17a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D17b"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D17c"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D17d"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D17e"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_D17f"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/jb_C8"
+                android:text="@string/PS_D18"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C8a"
+                android:id="@+id/ps37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C8a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C9"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C9a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C9a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C10"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C10a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C10a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C11"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C11a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C11a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C12"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C12a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C12a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C13"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C13a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C13a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C14"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C14a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C14a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C15"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C15a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C15a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_C16"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C16a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_C16a"/>
+                android:text="@string/PS_D18a"/>
 
             <View
                 android:layout_width="match_parent"
@@ -513,35 +535,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
-                android:text="@string/jb_D"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_D1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_D1a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_D1a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_E"
+                android:text="@string/PS_E"
                 android:textColor="@color/colorBlack" />
 
             <TextView
@@ -549,364 +543,129 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:text="@string/jb_E1"
+                android:text="@string/PS_E19"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_E1a"
+                android:id="@+id/ps38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_E1a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_F"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_F1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E19a"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_F1a"
+                android:id="@+id/ps39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_F1a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_F2"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E19b"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_F2a"
+                android:id="@+id/ps40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_F2a"/>
+                android:text="@string/PS_E19c"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_G"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E19d"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:text="@string/jb_G1"
+                android:text="@string/PS_E20"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_G1a"
+                android:id="@+id/ps42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_G1a"/>
+                android:text="@string/PS_E20a"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_E20b"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:text="@string/PS_E21"
                 android:textStyle="bold"
-                android:text="@string/jb_G2"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_G2a"
+                android:id="@+id/ps44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_G2a"/>
+                android:text="@string/PS_E21a"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_H"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E21b"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_E21c"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ps47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PS_E21d"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textStyle="bold"
-                android:text="@string/jb_H1"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_H1a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_G1a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_H2"
+                android:text="@string/PS_E22"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_H2a"
+                android:id="@+id/ps48"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_H2a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_I"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_I1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E22a"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_I1a"
+                android:id="@+id/ps49"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_I1a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_J"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_J1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E22b"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_J1a"
+                android:id="@+id/ps50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_J1a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_J2"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E22c"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_J2a"
+                android:id="@+id/ps51"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_J2a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_K"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_K1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E22d"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_K1a"
+                android:id="@+id/ps52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_K1a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_L"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_L1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:text="@string/PS_E22e"/>
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_L1a"
+                android:id="@+id/ps53"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_L1a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_M"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold"
-                android:text="@string/jb_M1"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_M1a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_M1a"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#b7b7b7" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="@string/jb_N"
-                android:textColor="@color/colorBlack" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_N1"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N1a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_M1a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_N2"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N2a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_N2a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold"
-                android:text="@string/jb_N3"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N3a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_N3a"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/jb_N4"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N4a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jb_N4a"/>
+                android:text="@string/PS_E22f"/>
 
             <Button
                 android:id="@+id/send"
@@ -917,6 +676,5 @@
                 android:text="@string/next"/>
 
         </LinearLayout>
-
     </ScrollView>
 </LinearLayout>
