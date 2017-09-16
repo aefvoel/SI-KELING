@@ -48,10 +48,11 @@
                     android:id="@+id/namaKK"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/namakk" />
+                    android:hint="@string/namakk"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_alamat"
                 android:layout_width="match_parent"
@@ -63,10 +64,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/alamatkk" />
+                    android:hint="@string/alamatkk"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_jumlahKK"
                 android:layout_width="match_parent"
@@ -76,9 +78,9 @@
                     android:id="@+id/jmlAnggota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
                     android:hint="@string/jumlahkk"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -122,9 +124,9 @@
                         android:id="@+id/noRumah"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
                         android:hint="@string/nmrRmh"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        android:textColor="@color/colorPrimary" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -914,11 +916,34 @@
 
             </RadioGroup>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#b7b7b7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jenisSAB"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_sab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:entries="@array/sab_arrays"
+                android:padding="15dp" />
+
             <Button
                 android:id="@+id/send"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="200dp"
                 android:background="@drawable/rectangle_green"
                 android:text="@string/next2" />
 

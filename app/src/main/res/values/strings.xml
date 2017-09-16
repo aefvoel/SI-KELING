@@ -37,6 +37,15 @@
     <string name="ketPKL">3. PKL = Pelayanan Kesehatan Lingkungan</string>
     <!--DESC. MODUL FINISH-->
 
+
+    <string-array name="sab_arrays">
+        <item>Pompa Tangan Dangkal/Dalam/Listrik</item>
+        <item>Sumur Gali</item>
+        <item>Sumur Gali Plus</item>
+        <item>Perpipaan/PDAM</item>
+        <item>Mata Air</item>
+    </string-array>
+
     <!--RT START-->
     <string name="rt_prompt">RT</string>
     <string-array name="rt_arrays">
