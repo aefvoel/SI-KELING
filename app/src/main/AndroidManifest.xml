@@ -120,7 +120,7 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
         <activity android:name=".activity.faskes_rumah_sakit"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="Check List Kolam RS"
+            android:label="Check List Rumah Sakit"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden"/>
     </application>
 

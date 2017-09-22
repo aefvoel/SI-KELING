@@ -6,18 +6,35 @@ package tiregdev.sipepikeling.model;
 
 public class KK {
 
-    private String alamat;
-    private String namaKK;
-    private String jumlahAnggota;
-    private String noRumah;
+    private String namaPerKK;
+    private String jumlahAnggotaPerKK;
     private String idPetugas;
+    private String idRS;
+    private String nik;
+    private String noKIS;
 
-    public KK(String alamat, String namaKK, String jumlahAnggota, String noRumah, String idPetugas) {
-        this.alamat = alamat;
-        this.namaKK = namaKK;
-        this.jumlahAnggota = jumlahAnggota;
-        this.noRumah = noRumah;
+    public KK(String namaPerKK, String jumlahAnggotaPerKK, String idPetugas, String idRS, String nik) {
+        this.namaPerKK = namaPerKK;
+        this.jumlahAnggotaPerKK = jumlahAnggotaPerKK;
         this.idPetugas = idPetugas;
+        this.idRS = idRS;
+        this.nik = nik;
+    }
+
+    public String getNamaPerKK() {
+        return namaPerKK;
+    }
+
+    public void setNamaPerKK(String namaPerKK) {
+        this.namaPerKK = namaPerKK;
+    }
+
+    public String getJumlahAnggotaPerKK() {
+        return jumlahAnggotaPerKK;
+    }
+
+    public void setJumlahAnggotaPerKK(String jumlahAnggotaPerKK) {
+        this.jumlahAnggotaPerKK = jumlahAnggotaPerKK;
     }
 
     public String getIdPetugas() {
@@ -28,35 +45,27 @@ public class KK {
         this.idPetugas = idPetugas;
     }
 
-    public String getAlamat() {
-        return alamat;
+    public String getIdRS() {
+        return idRS;
     }
 
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
+    public void setIdRS(String idRS) {
+        this.idRS = idRS;
     }
 
-    public String getNamaKK() {
-        return namaKK;
+    public String getNik() {
+        return nik;
     }
 
-    public void setNamaKK(String namaKK) {
-        this.namaKK = namaKK;
+    public void setNik(String nik) {
+        this.nik = nik;
     }
 
-    public String getJumlahAnggota() {
-        return jumlahAnggota;
+    public String getNoKIS() {
+        return noKIS;
     }
 
-    public void setJumlahAnggota(String jumlahAnggota) {
-        this.jumlahAnggota = jumlahAnggota;
-    }
-
-    public String getNoRumah() {
-        return noRumah;
-    }
-
-    public void setNoRumah(String noRumah) {
-        this.noRumah = noRumah;
+    public void setNoKIS(String noKIS) {
+        this.noKIS = noKIS;
     }
 }

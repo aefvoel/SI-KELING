@@ -64,6 +64,7 @@
                     android:id="@+id/namaAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="false"
                     android:textColor="@color/colorPrimary"
                     android:hint="@string/jb_2"
                     android:inputType="text" />
@@ -119,10 +120,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_A1a"
+                android:id="@+id/cb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_A1a"/>
+                android:text="@string/jb_A1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -133,10 +134,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_A2a"
+                android:id="@+id/cb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_A2a"/>
+                android:text="@string/jb_A2a" />
 
             <View
                 android:layout_width="match_parent"
@@ -161,10 +162,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B1a"
+                android:id="@+id/cb3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B1a"/>
+                android:text="@string/jb_B1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -175,10 +176,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B2a"
+                android:id="@+id/cb4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B2a"/>
+                android:text="@string/jb_B2a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -189,10 +190,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B3a"
+                android:id="@+id/cb5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B3a"/>
+                android:text="@string/jb_B3a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -203,10 +204,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B4a"
+                android:id="@+id/cb6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B4a"/>
+                android:text="@string/jb_B4a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -217,10 +218,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B5a"
+                android:id="@+id/cb7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B5a"/>
+                android:text="@string/jb_B5a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -231,10 +232,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B6a"
+                android:id="@+id/cb8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B6a"/>
+                android:text="@string/jb_B6a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -245,10 +246,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B7a"
+                android:id="@+id/cb9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B7a"/>
+                android:text="@string/jb_B7a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -259,10 +260,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_B8a"
+                android:id="@+id/cb10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_B8a"/>
+                android:text="@string/jb_B8a" />
 
             <View
                 android:layout_width="match_parent"
@@ -287,10 +288,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C1a"
+                android:id="@+id/cb11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C1a"/>
+                android:text="@string/jb_C1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -301,10 +302,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C2a"
+                android:id="@+id/cb12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C2a"/>
+                android:text="@string/jb_C2a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -315,10 +316,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C3a"
+                android:id="@+id/cb13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C3a"/>
+                android:text="@string/jb_C3a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -329,10 +330,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C4a"
+                android:id="@+id/cb14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C4a"/>
+                android:text="@string/jb_C4a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -343,10 +344,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C5a"
+                android:id="@+id/cb15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C5a"/>
+                android:text="@string/jb_C5a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -357,10 +358,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C6a"
+                android:id="@+id/cb16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C6a"/>
+                android:text="@string/jb_C6a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -371,10 +372,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C7a"
+                android:id="@+id/cb17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C7a"/>
+                android:text="@string/jb_C7a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -385,10 +386,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C8a"
+                android:id="@+id/cb18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C8a"/>
+                android:text="@string/jb_C8a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -399,10 +400,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C9a"
+                android:id="@+id/cb19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C9a"/>
+                android:text="@string/jb_C9a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -413,10 +414,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C10a"
+                android:id="@+id/cb20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C10a"/>
+                android:text="@string/jb_C10a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -427,10 +428,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C11a"
+                android:id="@+id/cb21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C11a"/>
+                android:text="@string/jb_C11a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -441,10 +442,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C12a"
+                android:id="@+id/cb22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C12a"/>
+                android:text="@string/jb_C12a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -455,10 +456,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C13a"
+                android:id="@+id/cb23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C13a"/>
+                android:text="@string/jb_C13a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -469,10 +470,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C14a"
+                android:id="@+id/cb24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C14a"/>
+                android:text="@string/jb_C14a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -483,10 +484,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C15a"
+                android:id="@+id/cb25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C15a"/>
+                android:text="@string/jb_C15a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -497,10 +498,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_C16a"
+                android:id="@+id/cb26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_C16a"/>
+                android:text="@string/jb_C16a" />
 
             <View
                 android:layout_width="match_parent"
@@ -525,10 +526,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_D1a"
+                android:id="@+id/cb27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_D1a"/>
+                android:text="@string/jb_D1a" />
 
             <View
                 android:layout_width="match_parent"
@@ -553,10 +554,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_E1a"
+                android:id="@+id/cb28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_E1a"/>
+                android:text="@string/jb_E1a" />
 
             <View
                 android:layout_width="match_parent"
@@ -581,10 +582,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_F1a"
+                android:id="@+id/cb29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_F1a"/>
+                android:text="@string/jb_F1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -595,10 +596,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_F2a"
+                android:id="@+id/cb30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_F2a"/>
+                android:text="@string/jb_F2a" />
 
             <View
                 android:layout_width="match_parent"
@@ -623,10 +624,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_G1a"
+                android:id="@+id/cb31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_G1a"/>
+                android:text="@string/jb_G1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -637,10 +638,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_G2a"
+                android:id="@+id/cb32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_G2a"/>
+                android:text="@string/jb_G2a" />
 
             <View
                 android:layout_width="match_parent"
@@ -665,10 +666,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_H1a"
+                android:id="@+id/cb33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_G1a"/>
+                android:text="@string/jb_G1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -679,10 +680,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_H2a"
+                android:id="@+id/cb34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_H2a"/>
+                android:text="@string/jb_H2a" />
 
             <View
                 android:layout_width="match_parent"
@@ -707,10 +708,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_I1a"
+                android:id="@+id/cb35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_I1a"/>
+                android:text="@string/jb_I1a" />
 
             <View
                 android:layout_width="match_parent"
@@ -735,10 +736,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_J1a"
+                android:id="@+id/cb36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_J1a"/>
+                android:text="@string/jb_J1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -749,10 +750,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_J2a"
+                android:id="@+id/cb37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_J2a"/>
+                android:text="@string/jb_J2a" />
 
             <View
                 android:layout_width="match_parent"
@@ -777,10 +778,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_K1a"
+                android:id="@+id/cb38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_K1a"/>
+                android:text="@string/jb_K1a" />
 
             <View
                 android:layout_width="match_parent"
@@ -805,10 +806,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_L1a"
+                android:id="@+id/cb39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_L1a"/>
+                android:text="@string/jb_L1a" />
 
             <View
                 android:layout_width="match_parent"
@@ -833,10 +834,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_M1a"
+                android:id="@+id/cb40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_M1a"/>
+                android:text="@string/jb_M1a" />
 
             <View
                 android:layout_width="match_parent"
@@ -861,10 +862,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N1a"
+                android:id="@+id/cb41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_M1a"/>
+                android:text="@string/jb_M1a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -875,10 +876,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N2a"
+                android:id="@+id/cb42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_N2a"/>
+                android:text="@string/jb_N2a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -889,10 +890,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N3a"
+                android:id="@+id/cb43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_N3a"/>
+                android:text="@string/jb_N3a" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -903,10 +904,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/jb_N4a"
+                android:id="@+id/cb44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jb_N4a"/>
+                android:text="@string/jb_N4a" />
 
             <Button
                 android:id="@+id/send"

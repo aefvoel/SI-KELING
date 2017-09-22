@@ -18,10 +18,9 @@ public class SAB {
     private String idPetugas;
     private int totalNilai;
     private String status;
-    private String idKK;
     private String idRS;
 
-    public SAB(String namaPuskesmas, String kodeSarana, String pemilikSarana, String sudahDiambil, String kodeSampel, String golongan, String kategori, String waktu, String alamat, String koordinat, String idPetugas, int totalNilai, String status, String idKK, String idRS) {
+    public SAB(String namaPuskesmas, String kodeSarana, String pemilikSarana, String sudahDiambil, String kodeSampel, String golongan, String kategori, String waktu, String alamat, String koordinat, String idPetugas, int totalNilai, String status, String idRS) {
         this.namaPuskesmas = namaPuskesmas;
         this.kodeSarana = kodeSarana;
         this.pemilikSarana = pemilikSarana;
@@ -35,26 +34,16 @@ public class SAB {
         this.idPetugas = idPetugas;
         this.totalNilai = totalNilai;
         this.status = status;
-        this.idKK = idKK;
         this.idRS = idRS;
     }
 
-    public SAB(String kategori, String waktu, String alamat, String koordinat, String idPetugas, String idKK, String idRS) {
+    public SAB(String kategori, String waktu, String alamat, String koordinat, String idPetugas, String idRS) {
         this.kategori = kategori;
         this.waktu = waktu;
         this.alamat = alamat;
         this.koordinat = koordinat;
         this.idPetugas = idPetugas;
-        this.idKK = idKK;
         this.idRS = idRS;
-    }
-
-    public String getIdKK() {
-        return idKK;
-    }
-
-    public void setIdKK(String idKK) {
-        this.idKK = idKK;
     }
 
     public String getNamaPuskesmas() {

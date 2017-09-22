@@ -68,7 +68,6 @@ public class jenis_sab extends AppCompatActivity {
             @Override
             public void onComplete(RippleView rippleView) {
                 Intent w = new Intent(jenis_sab.this, sab_pompa.class);
-                w.putExtra("idKK", getIntent().getExtras().getString("idKK"));
                 w.putExtra("idSAB", getIntent().getExtras().getString("idSAB"));
                 w.putExtra("idRS", getIntent().getExtras().getString("idRS"));
                 w.putExtra("koordinat", getIntent().getExtras().getString("koordinat"));
@@ -83,7 +82,6 @@ public class jenis_sab extends AppCompatActivity {
             @Override
             public void onComplete(RippleView rippleView) {
                 Intent w = new Intent(jenis_sab.this, sab_sumur_gali.class);
-                w.putExtra("idKK", getIntent().getExtras().getString("idKK"));
                 w.putExtra("idSAB", getIntent().getExtras().getString("idSAB"));
                 w.putExtra("idRS", getIntent().getExtras().getString("idRS"));
                 w.putExtra("koordinat", getIntent().getExtras().getString("koordinat"));
@@ -98,7 +96,6 @@ public class jenis_sab extends AppCompatActivity {
             @Override
             public void onComplete(RippleView rippleView) {
                 Intent w = new Intent(jenis_sab.this, sab_sumur_gali_plus.class);
-                w.putExtra("idKK", getIntent().getExtras().getString("idKK"));
                 w.putExtra("idSAB", getIntent().getExtras().getString("idSAB"));
                 w.putExtra("idRS", getIntent().getExtras().getString("idRS"));
                 w.putExtra("koordinat", getIntent().getExtras().getString("koordinat"));
@@ -131,22 +128,11 @@ public class jenis_sab extends AppCompatActivity {
         String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
         String idPetugas = pref.getString(SessionString.EXTRA_KEY_ID_USER, null);
         String idKK = getIntent().getExtras().getString("idKK");
-        SAB setSAB = new SAB(kategori, waktu, getIntent().getExtras().getString("alamat"), getIntent().getExtras().getString("koordinat"), idPetugas, idKK, getIntent().getExtras().getString("idRS"));
+        SAB setSAB = new SAB(kategori, waktu, getIntent().getExtras().getString("alamat"), getIntent().getExtras().getString("koordinat"), idPetugas, getIntent().getExtras().getString("idRS"));
         mDatabase.child("sab").child(getIntent().getExtras().getString("idSAB")).child("data").setValue(setSAB);
         Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getBaseContext(), MainActivity.class));
         finish();
-    }
-    @Override
-    public boolean onOptionsItemSelected(android.view.MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // todo: goto back activity from here
-                jenis_sab.this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
     private void setSharedPreferences() {

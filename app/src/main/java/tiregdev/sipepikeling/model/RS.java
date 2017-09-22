@@ -6,7 +6,6 @@ package tiregdev.sipepikeling.model;
 
 public class RS {
 
-    private String idKK;
     private String koordinat;
     private String waktu;
     private String idPetugas;
@@ -19,9 +18,14 @@ public class RS {
     private String idSAB;
     private String rt;
     private String rw;
+    private String alamat;
+    private String noRumah;
+    private int jumlahAnggota;
+    private String namaKK;
+    private String statusRumah;
 
-    public RS(String idKK, String koordinat, String waktu, String idPetugas, int totalNilai, String status, String jamban, String spal, String pjb, String sampah, String idSAB, String rt, String rw) {
-        this.idKK = idKK;
+
+    public RS(String koordinat, String waktu, String idPetugas, int totalNilai, String status, String jamban, String spal, String pjb, String sampah, String idSAB, String rt, String rw, String alamat, String noRumah, int jumlahAnggota, String namaKK, String statusRumah) {
         this.koordinat = koordinat;
         this.waktu = waktu;
         this.idPetugas = idPetugas;
@@ -34,14 +38,11 @@ public class RS {
         this.idSAB = idSAB;
         this.rt = rt;
         this.rw = rw;
-    }
-
-    public String getIdKK() {
-        return idKK;
-    }
-
-    public void setIdKK(String idKK) {
-        this.idKK = idKK;
+        this.alamat = alamat;
+        this.noRumah = noRumah;
+        this.jumlahAnggota = jumlahAnggota;
+        this.namaKK = namaKK;
+        this.statusRumah = statusRumah;
     }
 
     public String getKoordinat() {
@@ -138,5 +139,45 @@ public class RS {
 
     public void setRw(String rw) {
         this.rw = rw;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getNoRumah() {
+        return noRumah;
+    }
+
+    public void setNoRumah(String noRumah) {
+        this.noRumah = noRumah;
+    }
+
+    public int getJumlahAnggota() {
+        return jumlahAnggota;
+    }
+
+    public void setJumlahAnggota(int jumlahAnggota) {
+        this.jumlahAnggota = jumlahAnggota;
+    }
+
+    public String getNamaKK() {
+        return namaKK;
+    }
+
+    public void setNamaKK(String namaKK) {
+        this.namaKK = namaKK;
+    }
+
+    public String getStatusRumah() {
+        return statusRumah;
+    }
+
+    public void setStatusRumah(String statusRumah) {
+        this.statusRumah = statusRumah;
     }
 }

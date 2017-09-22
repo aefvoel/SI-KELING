@@ -65,6 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/HTL_2"
+                    android:focusable="false"
                     android:inputType="text"
                     android:textColor="@color/colorPrimary" />
 
@@ -165,28 +166,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i1"
+                android:id="@+id/cb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A1_a"/>
+                android:text="@string/HTL_i_A1_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i2"
+                android:id="@+id/cb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A2_b"/>
+                android:text="@string/HTL_i_A2_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i3"
+                android:id="@+id/cb3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A1_c"/>
+                android:text="@string/HTL_i_A1_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i4"
+                android:id="@+id/cb4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A1_d"/>
+                android:text="@string/HTL_i_A1_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -197,28 +198,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i5"
+                android:id="@+id/cb5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A2_a"/>
+                android:text="@string/HTL_i_A2_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i6"
+                android:id="@+id/cb6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A2_b"/>
+                android:text="@string/HTL_i_A2_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i7"
+                android:id="@+id/cb7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A2_c"/>
+                android:text="@string/HTL_i_A2_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i8"
+                android:id="@+id/cb8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A2_d"/>
+                android:text="@string/HTL_i_A2_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -229,16 +230,16 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i9"
+                android:id="@+id/cb9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A3_a"/>
+                android:text="@string/HTL_i_A3_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i10"
+                android:id="@+id/cb10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_A3_b"/>
+                android:text="@string/HTL_i_A3_b" />
 
             <View
                 android:layout_width="match_parent"
@@ -263,10 +264,10 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i11"
+                android:id="@+id/cb11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_B4_a"/>
+                android:text="@string/HTL_i_B4_a" />
 
             <View
                 android:layout_width="match_parent"
@@ -291,28 +292,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i12"
+                android:id="@+id/cb12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C5_a"/>
+                android:text="@string/HTL_i_C5_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i13"
+                android:id="@+id/cb13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C5_b"/>
+                android:text="@string/HTL_i_C5_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i14"
+                android:id="@+id/cb14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C5_c"/>
+                android:text="@string/HTL_i_C5_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i15"
+                android:id="@+id/cb15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C5_d"/>
+                android:text="@string/HTL_i_C5_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -323,28 +324,27 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i16"
+                android:id="@+id/cb16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C6_a"/>
+                android:text="@string/HTL_i_C6_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C6_b"/>
+                android:text="@string/HTL_i_C6_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i18"
+                android:id="@+id/cb17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C6_c"/>
+                android:text="@string/HTL_i_C6_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i19"
+                android:id="@+id/cb18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C6_d"/>
+                android:text="@string/HTL_i_C6_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -355,16 +355,16 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i20"
+                android:id="@+id/cb19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C7_a"/>
+                android:text="@string/HTL_i_C7_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i21"
+                android:id="@+id/cb20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C7_b"/>
+                android:text="@string/HTL_i_C7_b" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -375,16 +375,16 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i22"
+                android:id="@+id/cb21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C8_a"/>
+                android:text="@string/HTL_i_C8_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i23"
+                android:id="@+id/cb22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C8_b"/>
+                android:text="@string/HTL_i_C8_b" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -395,16 +395,16 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i24"
+                android:id="@+id/cb23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C9_a"/>
+                android:text="@string/HTL_i_C9_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i25"
+                android:id="@+id/cb24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C9_b"/>
+                android:text="@string/HTL_i_C9_b" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -415,35 +415,35 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i26"
+                android:id="@+id/cb25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C10_a"/>
+                android:text="@string/HTL_i_C10_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i27"
+                android:id="@+id/cb26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C10_b"/>
+                android:text="@string/HTL_i_C10_b" />
 
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i28"
+                android:id="@+id/cb27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C10_c"/>
+                android:text="@string/HTL_i_C10_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i29"
+                android:id="@+id/cb28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C10_d"/>
+                android:text="@string/HTL_i_C10_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_i30"
+                android:id="@+id/cb29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_i_C10_e"/>
+                android:text="@string/HTL_i_C10_e" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -470,34 +470,34 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii31"
+                android:id="@+id/cb30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_A11_a"/>
+                android:text="@string/HTL_ii_A11_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii32"
+                android:id="@+id/cb31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_A11_b"/>
+                android:text="@string/HTL_ii_A11_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii33"
+                android:id="@+id/cb32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_A11_c"/>
+                android:text="@string/HTL_ii_A11_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii34"
+                android:id="@+id/cb33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_A11_d"/>
+                android:text="@string/HTL_ii_A11_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii35"
+                android:id="@+id/cb34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_A11_e"/>
+                android:text="@string/HTL_ii_A11_e" />
 
             <View
                 android:layout_width="match_parent"
@@ -522,40 +522,40 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii36"
+                android:id="@+id/cb35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B12_a"/>
+                android:text="@string/HTL_ii_B12_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii37"
+                android:id="@+id/cb36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B12_b"/>
+                android:text="@string/HTL_ii_B12_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii38"
+                android:id="@+id/cb37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B12_c"/>
+                android:text="@string/HTL_ii_B12_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii39"
+                android:id="@+id/cb38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B12_d"/>
+                android:text="@string/HTL_ii_B12_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii40"
+                android:id="@+id/cb39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B12_e"/>
+                android:text="@string/HTL_ii_B12_e" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii41"
+                android:id="@+id/cb40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B12_f"/>
+                android:text="@string/HTL_ii_B12_f" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -566,28 +566,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii42"
+                android:id="@+id/cb41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B13_a"/>
+                android:text="@string/HTL_ii_B13_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii43"
+                android:id="@+id/cb42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B13_b"/>
+                android:text="@string/HTL_ii_B13_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii44"
+                android:id="@+id/cb43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B13_c"/>
+                android:text="@string/HTL_ii_B13_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii45"
+                android:id="@+id/cb44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B13_d"/>
+                android:text="@string/HTL_ii_B13_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -598,40 +598,40 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii46"
+                android:id="@+id/cb45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B14_a"/>
+                android:text="@string/HTL_ii_B14_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii47"
+                android:id="@+id/cb46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B14_b"/>
+                android:text="@string/HTL_ii_B14_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii48"
+                android:id="@+id/cb47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B14_c"/>
+                android:text="@string/HTL_ii_B14_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii49"
+                android:id="@+id/cb48"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B14_d"/>
+                android:text="@string/HTL_ii_B14_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii50"
+                android:id="@+id/cb49"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B14_e"/>
+                android:text="@string/HTL_ii_B14_e" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii51"
+                android:id="@+id/cb50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B14_f"/>
+                android:text="@string/HTL_ii_B14_f" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -642,22 +642,22 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii52"
+                android:id="@+id/cb51"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B15_a"/>
+                android:text="@string/HTL_ii_B15_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii53"
+                android:id="@+id/cb52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B15_b"/>
+                android:text="@string/HTL_ii_B15_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii54"
+                android:id="@+id/cb53"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B15_c"/>
+                android:text="@string/HTL_ii_B15_c" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -668,22 +668,22 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii55"
+                android:id="@+id/cb54"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B16_a"/>
+                android:text="@string/HTL_ii_B16_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii56"
+                android:id="@+id/cb55"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B16_b"/>
+                android:text="@string/HTL_ii_B16_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii57"
+                android:id="@+id/cb56"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B16_c"/>
+                android:text="@string/HTL_ii_B16_c" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -694,34 +694,34 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii58"
+                android:id="@+id/cb57"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B17_a"/>
+                android:text="@string/HTL_ii_B17_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii59"
+                android:id="@+id/cb58"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B17_b"/>
+                android:text="@string/HTL_ii_B17_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii60"
+                android:id="@+id/cb59"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B17_c"/>
+                android:text="@string/HTL_ii_B17_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii61"
+                android:id="@+id/cb60"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B17_d"/>
+                android:text="@string/HTL_ii_B17_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_ii62"
+                android:id="@+id/cb61"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_ii_B17_e"/>
+                android:text="@string/HTL_ii_B17_e" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -740,28 +740,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii63"
+                android:id="@+id/cb62"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_18_a"/>
+                android:text="@string/HTL_iii_18_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii64"
+                android:id="@+id/cb63"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_18_b"/>
+                android:text="@string/HTL_iii_18_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii65"
+                android:id="@+id/cb64"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_18_c"/>
+                android:text="@string/HTL_iii_18_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii66"
+                android:id="@+id/cb65"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_18_d"/>
+                android:text="@string/HTL_iii_18_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -772,28 +772,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii67"
+                android:id="@+id/cb66"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_19_a"/>
+                android:text="@string/HTL_iii_19_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii68"
+                android:id="@+id/cb67"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_19_b"/>
+                android:text="@string/HTL_iii_19_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii69"
+                android:id="@+id/cb68"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_19_c"/>
+                android:text="@string/HTL_iii_19_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii70"
+                android:id="@+id/cb69"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_19_d"/>
+                android:text="@string/HTL_iii_19_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -804,28 +804,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii71"
+                android:id="@+id/cb70"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_20_a"/>
+                android:text="@string/HTL_iii_20_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii72"
+                android:id="@+id/cb71"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_20_b"/>
+                android:text="@string/HTL_iii_20_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii73"
+                android:id="@+id/cb72"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_20_c"/>
+                android:text="@string/HTL_iii_20_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii74"
+                android:id="@+id/cb73"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_20_d"/>
+                android:text="@string/HTL_iii_20_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -836,28 +836,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii75"
+                android:id="@+id/cb74"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_21_a"/>
+                android:text="@string/HTL_iii_21_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii76"
+                android:id="@+id/cb75"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_21_b"/>
+                android:text="@string/HTL_iii_21_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii77"
+                android:id="@+id/cb76"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_21_c"/>
+                android:text="@string/HTL_iii_21_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii78"
+                android:id="@+id/cb77"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_21_d"/>
+                android:text="@string/HTL_iii_21_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -868,22 +868,22 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii79"
+                android:id="@+id/cb78"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_22_a"/>
+                android:text="@string/HTL_iii_22_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii80"
+                android:id="@+id/cb79"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_22_b"/>
+                android:text="@string/HTL_iii_22_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii81"
+                android:id="@+id/cb80"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_22_c"/>
+                android:text="@string/HTL_iii_22_c" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -902,40 +902,40 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii82"
+                android:id="@+id/cb81"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_A_1"/>
+                android:text="@string/HTL_iii_23_A_1" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii83"
+                android:id="@+id/cb82"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_A_2"/>
+                android:text="@string/HTL_iii_23_A_2" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii84"
+                android:id="@+id/cb83"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_A_3"/>
+                android:text="@string/HTL_iii_23_A_3" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii85"
+                android:id="@+id/cb84"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_A_4"/>
+                android:text="@string/HTL_iii_23_A_4" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii86"
+                android:id="@+id/cb85"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_A_5"/>
+                android:text="@string/HTL_iii_23_A_5" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii87"
+                android:id="@+id/cb86"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_A_6"/>
+                android:text="@string/HTL_iii_23_A_6" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -946,28 +946,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii88"
+                android:id="@+id/cb87"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_B_1"/>
+                android:text="@string/HTL_iii_23_B_1" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii89"
+                android:id="@+id/cb88"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_B_2"/>
+                android:text="@string/HTL_iii_23_B_2" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii90"
+                android:id="@+id/cb89"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_B_3"/>
+                android:text="@string/HTL_iii_23_B_3" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii91"
+                android:id="@+id/cb90"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_23_B_4"/>
+                android:text="@string/HTL_iii_23_B_4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -978,16 +978,16 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii92"
+                android:id="@+id/cb91"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_24_a"/>
+                android:text="@string/HTL_iii_24_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iii93"
+                android:id="@+id/cb92"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iii_24_b"/>
+                android:text="@string/HTL_iii_24_b" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1006,28 +1006,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv94"
+                android:id="@+id/cb93"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_25_a"/>
+                android:text="@string/HTL_iv_25_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv95"
+                android:id="@+id/cb94"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_25_b"/>
+                android:text="@string/HTL_iv_25_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv96"
+                android:id="@+id/cb95"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_25_c"/>
+                android:text="@string/HTL_iv_25_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv97"
+                android:id="@+id/cb96"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_25_d"/>
+                android:text="@string/HTL_iv_25_d" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1038,40 +1038,40 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv98"
+                android:id="@+id/cb97"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_26_a"/>
+                android:text="@string/HTL_iv_26_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv99"
+                android:id="@+id/cb98"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_26_b"/>
+                android:text="@string/HTL_iv_26_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv100"
+                android:id="@+id/cb99"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_26_c"/>
+                android:text="@string/HTL_iv_26_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv101"
+                android:id="@+id/cb100"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_26_d"/>
+                android:text="@string/HTL_iv_26_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv102"
+                android:id="@+id/cb101"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_26_e"/>
+                android:text="@string/HTL_iv_26_e" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv103"
+                android:id="@+id/cb102"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_26_f"/>
+                android:text="@string/HTL_iv_26_f" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1082,40 +1082,40 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv104"
+                android:id="@+id/cb103"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_27_a"/>
+                android:text="@string/HTL_iv_27_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv105"
+                android:id="@+id/cb104"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_27_b"/>
+                android:text="@string/HTL_iv_27_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv106"
+                android:id="@+id/cb105"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_27_c"/>
+                android:text="@string/HTL_iv_27_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv107"
+                android:id="@+id/cb106"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_27_d"/>
+                android:text="@string/HTL_iv_27_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv108"
+                android:id="@+id/cb107"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_27_e"/>
+                android:text="@string/HTL_iv_27_e" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv109"
+                android:id="@+id/cb108"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_27_f"/>
+                android:text="@string/HTL_iv_27_f" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1126,40 +1126,40 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv110"
+                android:id="@+id/cb109"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_28_a"/>
+                android:text="@string/HTL_iv_28_a" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv111"
+                android:id="@+id/cb110"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_28_b"/>
+                android:text="@string/HTL_iv_28_b" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv112"
+                android:id="@+id/cb111"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_28_c"/>
+                android:text="@string/HTL_iv_28_c" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv113"
+                android:id="@+id/cb112"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_28_d"/>
+                android:text="@string/HTL_iv_28_d" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv114"
+                android:id="@+id/cb113"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_28_e"/>
+                android:text="@string/HTL_iv_28_e" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv115"
+                android:id="@+id/cb114"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_iv_28_f"/>
+                android:text="@string/HTL_iv_28_f" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1178,58 +1178,58 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv116"
+                android:id="@+id/cb115"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_1"/>
+                android:text="@string/HTL_v_29_1" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv117"
+                android:id="@+id/cb116"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_2"/>
+                android:text="@string/HTL_v_29_2" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv118"
+                android:id="@+id/cb117"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_3"/>
+                android:text="@string/HTL_v_29_3" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv119"
+                android:id="@+id/cb118"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_4"/>
+                android:text="@string/HTL_v_29_4" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv120"
+                android:id="@+id/cb119"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_5"/>
+                android:text="@string/HTL_v_29_5" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv121"
+                android:id="@+id/cb120"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_6"/>
+                android:text="@string/HTL_v_29_6" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv122"
+                android:id="@+id/cb121"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_7"/>
+                android:text="@string/HTL_v_29_7" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv123"
+                android:id="@+id/cb122"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_8"/>
+                android:text="@string/HTL_v_29_8" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv124"
+                android:id="@+id/cb123"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_29_9"/>
+                android:text="@string/HTL_v_29_9" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1240,28 +1240,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv125"
+                android:id="@+id/cb124"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_30_1"/>
+                android:text="@string/HTL_v_30_1" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv126"
+                android:id="@+id/cb125"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_30_2"/>
+                android:text="@string/HTL_v_30_2" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv127"
+                android:id="@+id/cb126"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_30_3"/>
+                android:text="@string/HTL_v_30_3" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv128"
+                android:id="@+id/cb127"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_30_4"/>
+                android:text="@string/HTL_v_30_4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1272,28 +1272,28 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv129"
+                android:id="@+id/cb128"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_31_1"/>
+                android:text="@string/HTL_v_31_1" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv130"
+                android:id="@+id/cb129"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_31_2"/>
+                android:text="@string/HTL_v_31_2" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv131"
+                android:id="@+id/cb130"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_31_3"/>
+                android:text="@string/HTL_v_31_3" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv132"
+                android:id="@+id/cb131"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_31_4"/>
+                android:text="@string/HTL_v_31_4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1304,22 +1304,22 @@
                 android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv133"
+                android:id="@+id/cb132"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_32_1"/>
+                android:text="@string/HTL_v_32_1" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv134"
+                android:id="@+id/cb133"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_32_2"/>
+                android:text="@string/HTL_v_32_2" />
 
             <android.support.v7.widget.AppCompatCheckBox
-                android:id="@+id/HTL_iv135"
+                android:id="@+id/cb134"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/HTL_v_32_3"/>
+                android:text="@string/HTL_v_32_3" />
 
             <Button
                 android:id="@+id/send"

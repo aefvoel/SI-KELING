@@ -148,7 +148,7 @@ public class sab_pompa extends AppCompatActivity {
                 }else if(totalNilai >= 0 && totalNilai < 3 ) {
                     status = "Rendah (R)";
                 }
-                submitSAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, getIntent().getExtras().getString("kategori"), waktu, getIntent().getExtras().getString("alamat"), getIntent().getExtras().getString("koordinat"), idPetugas, totalNilai, status, nilaiSAB, getIntent().getExtras().getString("idKK"), getIntent().getExtras().getString("idRS"));
+                submitSAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, getIntent().getExtras().getString("kategori"), waktu, getIntent().getExtras().getString("alamat"), getIntent().getExtras().getString("koordinat"), idPetugas, totalNilai, status, nilaiSAB,  getIntent().getExtras().getString("idRS"));
             }else{
                 Toast.makeText(this, "Error harap check semua opsi!", Toast.LENGTH_SHORT).show();
             }
@@ -159,25 +159,14 @@ public class sab_pompa extends AppCompatActivity {
 
     private void submitSAB(String txtNamaPuskesmas, String txtKodeSarana, String txtPemilikSarana, String txtSudahDiambil,
                            String txtKodeSampel, String txtGolongan, String kategori, String waktu, String alamat, String koordinat,
-                           String idPetugas, int totalNilai, String status, HashMap<String, String> nilaiSAB, String idKK, String idRS){
-        SAB setSAB = new SAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel, txtGolongan, kategori, waktu, alamat, koordinat, idPetugas, totalNilai, status, idKK, idRS);
+                           String idPetugas, int totalNilai, String status, HashMap<String, String> nilaiSAB, String idRS){
+        SAB setSAB = new SAB(txtNamaPuskesmas, txtKodeSarana, txtPemilikSarana, txtSudahDiambil, txtKodeSampel,
+                txtGolongan, kategori, waktu, alamat, koordinat, idPetugas, totalNilai, status, idRS);
         mDatabase.child("sab").child(getIntent().getExtras().getString("idSAB")).child("data").setValue(setSAB);
         mDatabase.child("sab").child(getIntent().getExtras().getString("idSAB")).child("nilai").setValue(nilaiSAB);
         Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getBaseContext(), MainActivity.class));
         finish();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(android.view.MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // todo: goto back activity from here
-                sab_pompa.this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
     private void setSharedPreferences() {

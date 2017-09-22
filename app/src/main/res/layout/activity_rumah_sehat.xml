@@ -79,10 +79,65 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/jumlahkk"
-                    android:inputType="number"
                     android:textColor="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nik"
+                    android:textColor="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/inputkis"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/noKIS"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/noKIS"-->
+                    <!--android:textColor="@color/colorPrimary" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/statusRumah"
+                android:textColor="@color/colorBlack" />
+
+            <RadioGroup
+                android:id="@+id/statusRumah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/status1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statusRumah1" />
+
+                <RadioButton
+                    android:id="@+id/status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statusRumah2" />
+
+            </RadioGroup>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,7 +180,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/nmrRmh"
-                        android:inputType="number"
                         android:textColor="@color/colorPrimary" />
 
                 </android.support.design.widget.TextInputLayout>
@@ -927,6 +981,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/jenisSAB"
                 android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -934,7 +989,7 @@
                 android:id="@+id/spinner_sab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/colorPrimary"
                 android:entries="@array/sab_arrays"
                 android:padding="15dp" />
@@ -943,7 +998,7 @@
                 android:id="@+id/send"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/rectangle_green"
                 android:text="@string/next2" />
 

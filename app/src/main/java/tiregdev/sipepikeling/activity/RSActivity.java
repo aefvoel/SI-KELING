@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -48,16 +49,20 @@ import tiregdev.sipepikeling.R;
 import tiregdev.sipepikeling.jenis_sab;
 import tiregdev.sipepikeling.model.KK;
 import tiregdev.sipepikeling.model.RS;
+import tiregdev.sipepikeling.model.SAB;
+import tiregdev.sipepikeling.sab_pompa;
+import tiregdev.sipepikeling.sab_sumur_gali;
+import tiregdev.sipepikeling.sab_sumur_gali_plus;
 import tiregdev.sipepikeling.utils.SessionString;
 
 public class RSActivity extends AppCompatActivity {
 
-    EditText frmNamaKK, frmAlamat, frmJmlAnggota, frmNoRumah;
-    Spinner spinnerRT, spinnerRW;
+    EditText frmNamaKK, frmAlamat, frmJmlAnggota, frmNoRumah, frmNIK, frmNoKIS;
+    Spinner spinnerRT, spinnerRW, spinnerSAB;
     Button btnSend;
     SimpleDateFormat sdf;
     RadioGroup[] rg = new RadioGroup[17];
-    RadioGroup rg22, rg21, rg20, rg19;
+    RadioGroup rg22, rg21, rg20, rg19, rgStatus;
     private double lat;
     private double lng;
     private FirebaseAuth mFirebaseAuth;
@@ -83,14 +88,18 @@ public class RSActivity extends AppCompatActivity {
     private void setInit(){
         frmNamaKK = (EditText)findViewById(R.id.namaKK);
         frmAlamat = (EditText)findViewById(R.id.alamatKK);
+        frmNIK = (EditText)findViewById(R.id.nik);
         frmJmlAnggota = (EditText)findViewById(R.id.jmlAnggota);
         frmNoRumah = (EditText)findViewById(R.id.noRumah);
+//        frmNoKIS = (EditText)findViewById(R.id.noKIS);
         spinnerRT = (Spinner)findViewById(R.id.spinner_rt);
         spinnerRW = (Spinner)findViewById(R.id.spinner_rw);
+        spinnerSAB = (Spinner)findViewById(R.id.spinner_sab);
         rg22 = (RadioGroup)findViewById(R.id.rg22);
         rg21 = (RadioGroup)findViewById(R.id.rg21);
         rg20 = (RadioGroup)findViewById(R.id.rg20);
         rg19 = (RadioGroup)findViewById(R.id.rg19);
+        rgStatus = (RadioGroup)findViewById(R.id.statusRumah);
         sdf = new  SimpleDateFormat("dd/MM/yyyy h:mm:ss a");
         for(int i = 1; i<=17; i++)
         {
@@ -155,10 +164,11 @@ public class RSActivity extends AppCompatActivity {
 
     private void onSubmit(){
         if(!frmJmlAnggota.getText().toString().trim().equals("") && !frmNoRumah.getText().toString().trim().equals("")
-                && !frmAlamat.getText().toString().trim().equals("") && rg19.getCheckedRadioButtonId() != -1
-                && rg20.getCheckedRadioButtonId() != -1 && rg21.getCheckedRadioButtonId() != -1
-                && rg22.getCheckedRadioButtonId() != -1){
-            String txtJmlAnggota = frmJmlAnggota.getText().toString().trim();
+                && !frmAlamat.getText().toString().trim().equals("")
+                && !frmNIK.getText().toString().trim().equals("") && rg19.getCheckedRadioButtonId() != -1
+                && rgStatus.getCheckedRadioButtonId() != -1 && rg20.getCheckedRadioButtonId() != -1 && rg21.getCheckedRadioButtonId() != -1
+                && rg22.getCheckedRadioButtonId() != -1 ){
+
             String txtNoRumah = frmNoRumah.getText().toString().trim();
             String txtRT = spinnerRT.getSelectedItem().toString().trim();
             String txtRW = spinnerRW.getSelectedItem().toString().trim();
@@ -166,7 +176,8 @@ public class RSActivity extends AppCompatActivity {
             String waktu = sdf.format(Calendar.getInstance().getTime().getTime());
             String koordinat = String.valueOf(lat) + ", " + String.valueOf(lng);
             String alamat = frmAlamat.getText().toString().trim();
-
+            String namaKK = frmNamaKK.getText().toString().trim();
+            String statusRumah = ((RadioButton)findViewById(rgStatus.getCheckedRadioButtonId())).getText().toString();
             String jamban = ((RadioButton)findViewById(rg21.getCheckedRadioButtonId())).getText().toString();
             String spal = ((RadioButton)findViewById(rg22.getCheckedRadioButtonId())).getText().toString();
             String pjb = ((RadioButton)findViewById(rg20.getCheckedRadioButtonId())).getText().toString();
@@ -176,6 +187,7 @@ public class RSActivity extends AppCompatActivity {
 
 
             int totalNilai = 0;
+            int jmlAnggota = 0;
             boolean hasValue = true;
             String status;
             String[] txtRB = new String[17];
@@ -198,40 +210,42 @@ public class RSActivity extends AppCompatActivity {
                     }
 
                     nilaiRS.put("nilai_" + i , nilaiRB[i]);
-                    totalNilai = totalNilai + Integer.valueOf(nilaiRB[i]);
+                    totalNilai = totalNilai + Integer.parseInt(nilaiRB[i]);
                 }else{
                     hasValue = false;
                 }
             }
             if(hasValue){
-                if(frmNamaKK.getText().toString().contains(",")){
-                    String[] splitNamaKK = frmNamaKK.getText().toString().trim().split(",");
+                String pushRS = mDatabase.child("rs").push().getKey();
+                if(frmNamaKK.getText().toString().contains(",") && frmJmlAnggota.getText().toString().contains(",") && frmNIK.getText().toString().contains(",")){
+                    String[] splitNamaKK = frmNamaKK.getText().toString().replace(" ", "").trim().trim().split(",");
+                    String[] splitJmlAnggota = frmJmlAnggota.getText().toString().replace(" ", "").trim().split(",");
+                    String[] splitNik = frmNIK.getText().toString().replace(" ", "").trim().split(",");
+//                    String[] splitNoKis = frmNoKIS.getText().toString().replace(" ", "").trim().split(",");
                     for(int i = 0;i<splitNamaKK.length;i++){
-                        KK setKK = new KK(alamat, splitNamaKK[i], txtJmlAnggota, txtNoRumah, idPetugas);
+                        KK setKK = new KK(splitNamaKK[i], splitJmlAnggota[i], idPetugas, pushRS, splitNik[i]);
                         String pushKK = mDatabase.child("kk").push().getKey();
                         mDatabase.child("kk").child(pushKK).setValue(setKK);
-                        if(totalNilai <= 1068){
-                            status = "Rumah Tidak Sehat";
-                        }else {
-                            status = "Rumah Sehat";
-                        }
-
-                        submitRS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, nilaiRS);
+                        jmlAnggota = jmlAnggota + Integer.parseInt(splitJmlAnggota[i]);
                     }
-
                 }else{
                     String txtNamaKK = frmNamaKK.getText().toString().trim();
-                    KK setKK = new KK(alamat, txtNamaKK, txtJmlAnggota, txtNoRumah, idPetugas);
+                    String txtJmlAnggota = frmJmlAnggota.getText().toString().trim();
+                    String txtNik = frmNIK.getText().toString().trim();
+//                    String txtNoKis = frmNoKIS.getText().toString().trim();
+                    KK setKK = new KK(txtNamaKK, txtJmlAnggota, idPetugas, pushRS, txtNik);
                     String pushKK = mDatabase.child("kk").push().getKey();
                     mDatabase.child("kk").child(pushKK).setValue(setKK);
-                    if(totalNilai <= 1068){
-                        status = "Rumah Tidak Sehat";
-                    }else {
-                        status = "Rumah Sehat";
-                    }
-
-                    submitRS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, nilaiRS);
+                    jmlAnggota = Integer.parseInt(frmJmlAnggota.getText().toString().trim());
                 }
+
+                if(totalNilai <= 1068){
+                    status = "Rumah Tidak Sehat";
+                }else {
+                    status = "Rumah Sehat";
+                }
+
+                submitRS(koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, alamat, txtNoRumah, jmlAnggota, nilaiRS, pushRS, namaKK, statusRumah);
 
 
             }else{
@@ -245,24 +259,59 @@ public class RSActivity extends AppCompatActivity {
 
     }
 
-    private void submitRS(String pushKK, String koordinat, String waktu, String idPetugas,
+    private void submitRS(String koordinat, String waktu, String idPetugas,
                           int totalNilai, String status, String jamban, String spal, String pjb, String sampah,
-                          String idSAB, String txtRT, String txtRW, HashMap<String, String> nilaiRS){
-        RS setRS = new RS(pushKK, koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW);
+                          String idSAB, String txtRT, String txtRW, String alamat, String txtNoRumah, int jmlAnggota,
+                          HashMap<String, String> nilaiRS, String pushRS, String namaKK, String statusRumah){
+        RS setRS = new RS(koordinat, waktu, idPetugas, totalNilai, status, jamban, spal, pjb, sampah, idSAB, txtRT, txtRW, alamat, txtNoRumah, jmlAnggota, namaKK, statusRumah);
 
-        String pushRS = mDatabase.child("rs").push().getKey();
+
         mDatabase.child("rs").child(pushRS).child("data").setValue(setRS);
         mDatabase.child("rs").child(pushRS).child("nilai").setValue(nilaiRS);
 
-        Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(getBaseContext(), jenis_sab.class);
-        intent.putExtra("idKK", pushKK);
-        intent.putExtra("idSAB", idSAB);
-        intent.putExtra("idRS", pushRS);
-        intent.putExtra("koordinat", koordinat);
-        intent.putExtra("alamat", frmAlamat.getText().toString().trim());
-        startActivity(intent);
-        finish();
+        if(spinnerSAB.getSelectedItemPosition() == 0){
+            Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getBaseContext(), sab_pompa.class);
+            intent.putExtra("idSAB", idSAB);
+            intent.putExtra("idRS", pushRS);
+            intent.putExtra("koordinat", koordinat);
+            intent.putExtra("alamat", frmAlamat.getText().toString().trim());
+            intent.putExtra("kategori", "A");
+            startActivity(intent);
+            finish();
+        }else if(spinnerSAB.getSelectedItemPosition() == 1){
+            Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getBaseContext(), sab_sumur_gali.class);
+            intent.putExtra("idSAB", idSAB);
+            intent.putExtra("idRS", pushRS);
+            intent.putExtra("koordinat", koordinat);
+            intent.putExtra("alamat", frmAlamat.getText().toString().trim());
+            intent.putExtra("kategori", "B");
+            startActivity(intent);
+            finish();
+        }else if(spinnerSAB.getSelectedItemPosition() == 2){
+            Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getBaseContext(), sab_sumur_gali_plus.class);
+            intent.putExtra("idSAB", idSAB);
+            intent.putExtra("idRS", pushRS);
+            intent.putExtra("koordinat", koordinat);
+            intent.putExtra("alamat", frmAlamat.getText().toString().trim());
+            intent.putExtra("kategori", "C");
+            startActivity(intent);
+            finish();
+        }else if(spinnerSAB.getSelectedItemPosition() == 3){
+            String kategori = "D";
+            SAB setSAB = new SAB(kategori, waktu, alamat, koordinat, idPetugas, pushRS);
+            mDatabase.child("sab").child(idSAB).child("data").setValue(setSAB);
+            Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+            finish();
+        }else if(spinnerSAB.getSelectedItemPosition() == 4) {
+            String kategori = "E";
+            SAB setSAB = new SAB(kategori, waktu, alamat, koordinat, idPetugas, pushRS);
+            mDatabase.child("sab").child(idSAB).child("data").setValue(setSAB);
+            Toast.makeText(this, "Data berhasil dikirim!", Toast.LENGTH_SHORT).show();
+            finish();
+        }
     }
 
     private int setNilai(String abc){

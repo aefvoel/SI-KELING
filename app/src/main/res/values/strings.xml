@@ -28,6 +28,11 @@
     <string name="RS_SPAL"><b>SPAL</b></string>
     <string name="RS_SPAL1">Tertutup</string>
     <string name="RS_SPAL2">Terbuka</string>
+    <string name="nik">NIK (Sesuai KK)</string>
+    <string name="noKIS">No KIS</string>
+    <string name="statusRumah">Status Rumah:</string>
+    <string name="statusRumah1">Kontrak</string>
+    <string name="statusRumah2">Milik Sendiri</string>
     <string name="ketSAB">2. SAB = Sumber Air Bersih</string>
     <string name="ketTTU">4. TTU = Tempat_tempat Umum</string>
     <string name="ketTPM">2. TPM = Tempat Pengelolaan Makan</string>
